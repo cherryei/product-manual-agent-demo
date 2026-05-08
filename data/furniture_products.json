@@ -1,0 +1,289 @@
+[
+  {
+    "id": "five-tier-bookshelf",
+    "category": "furniture",
+    "image": "/static/images/bookshelf.svg",
+    "aliases": {
+      "en": ["bookshelf", "bookcase", "shelf", "storage rack"],
+      "de": ["buecherregal", "regal"],
+      "it": ["libreria", "scaffale"],
+      "fr": ["bibliotheque", "etagere"],
+      "es": ["estanteria", "librero"],
+      "jp": ["本棚", "ラック", "収納棚"],
+      "cn": ["书架", "书柜", "置物架", "储物架"]
+    },
+    "reference_sources": [
+      "Amazon product research keywords: 5 tier bookshelf, industrial bookcase, anti-tip kit, easy assembly"
+    ],
+    "source_notes": "Demo content is rewritten from common e-commerce furniture manual patterns and is not copied verbatim from a listing.",
+    "languages": {
+      "en": {
+        "name": "Five-Tier Bookshelf",
+        "title": "Industrial 5-Tier Bookcase for Living Room, Study, and Office",
+        "summary": "A vertical storage shelf for books, decor, and office supplies, designed with labeled boards and an anti-tip kit.",
+        "bullets": ["Five open shelves for books and display items.", "Powder-coated steel frame with engineered wood shelves.", "Adjustable feet help level the unit on indoor floors.", "Includes wall anti-tip hardware for safer daily use.", "Flat-pack design with numbered parts and illustrated steps."],
+        "specs": {"Dimensions": "80 x 30 x 180 cm", "Package": "96 x 39 x 18 cm", "Net weight": "22 kg", "Max load": "20 kg per shelf", "Material": "Engineered wood, steel frame, adjustable feet", "Included parts": "5 shelves, 2 side frames, cross bars, screws, wall anchor kit, Allen key"},
+        "installation": ["Lay all parts on a clean floor and match each label with the parts list.", "Attach the lower cross bars to the two side frames without fully tightening.", "Install shelves from bottom to top using the marked holes.", "Tighten all frame screws after every shelf is aligned.", "Adjust the leveling feet until the bookshelf stands evenly.", "Fix the anti-tip strap to the wall before loading books."],
+        "safety": ["Always install the anti-tip kit when children or pets may be present.", "Place heavy books on lower shelves first.", "Do not climb or hang from the shelves.", "Use only on a level indoor floor.", "Check screws and wall anchors every 3 months."],
+        "care": ["Dust with a dry soft cloth.", "Wipe spills immediately to protect the shelf surface.", "Avoid outdoor rain, steam, and long sunlight exposure.", "Do not use abrasive cleaners or steel wool."],
+        "faq": [{"q": "Does it need to be fixed to the wall?", "a": "Yes. The anti-tip kit should be installed for safer use."}, {"q": "Can I put a printer on it?", "a": "Yes, if the printer weight is within the per-shelf load limit and is placed on a lower shelf."}]
+      },
+      "de": {
+        "name": "Fuenfstufiges Buecherregal",
+        "title": "Industrie-Buecherregal mit 5 Ebenen fuer Wohnzimmer, Arbeitszimmer und Buero",
+        "summary": "Ein vertikales Regal fuer Buecher, Dekoration und Buromaterial, mit markierten Brettern und Kippschutz.",
+        "bullets": ["Fuenf offene Ablagen fuer Buecher und Dekoration.", "Pulverbeschichteter Stahlrahmen mit Holzwerkstoffboeden.", "Verstellbare Fuesse helfen beim Ausrichten auf Innenboeden.", "Kippschutz fuer die Wand ist enthalten.", "Flach verpackt mit nummerierten Teilen und bebilderten Schritten."],
+        "specs": {"Masse": "80 x 30 x 180 cm", "Paket": "96 x 39 x 18 cm", "Nettogewicht": "22 kg", "Maximale Last": "20 kg pro Boden", "Material": "Holzwerkstoff, Stahlrahmen, verstellbare Fuesse", "Lieferumfang": "5 Boeden, 2 Seitenrahmen, Querstreben, Schrauben, Wandanker-Set, Inbusschluessel"},
+        "installation": ["Legen Sie alle Teile auf einen sauberen Boden und vergleichen Sie die Markierungen mit der Teileliste.", "Befestigen Sie die unteren Querstreben an den Seitenrahmen, ohne sie ganz festzuziehen.", "Montieren Sie die Boeden von unten nach oben an den markierten Loechern.", "Ziehen Sie alle Rahmenschrauben fest, nachdem jeder Boden ausgerichtet ist.", "Stellen Sie die Fuesse ein, bis das Regal gerade steht.", "Befestigen Sie den Kippschutz an der Wand, bevor Sie Buecher einraeumen."],
+        "safety": ["Montieren Sie den Kippschutz immer, wenn Kinder oder Haustiere in der Naehe sind.", "Schwere Buecher zuerst auf die unteren Boeden stellen.", "Nicht auf das Regal klettern oder daran haengen.", "Nur auf ebenem Innenboden verwenden.", "Schrauben und Wandanker alle 3 Monate pruefen."],
+        "care": ["Mit einem trockenen weichen Tuch abstauben.", "Fluessigkeiten sofort abwischen.", "Regen, Dampf und lange Sonneneinstrahlung vermeiden.", "Keine Scheuermittel oder Stahlwolle verwenden."],
+        "faq": [{"q": "Muss es an der Wand befestigt werden?", "a": "Ja. Der Kippschutz sollte fuer eine sichere Nutzung montiert werden."}, {"q": "Kann ein Drucker darauf stehen?", "a": "Ja, wenn das Gewicht innerhalb der Belastungsgrenze liegt und der Drucker auf einem unteren Boden steht."}]
+      },
+      "it": {
+        "name": "Libreria a cinque ripiani",
+        "title": "Libreria industriale a 5 livelli per soggiorno, studio e ufficio",
+        "summary": "Uno scaffale verticale per libri, decorazioni e materiale da ufficio, con pannelli numerati e kit antiribaltamento.",
+        "bullets": ["Cinque ripiani aperti per libri e oggetti decorativi.", "Telaio in acciaio verniciato e ripiani in legno ingegnerizzato.", "Piedini regolabili per livellare il mobile su pavimenti interni.", "Include kit antiribaltamento da parete.", "Imballo piatto con parti numerate e passaggi illustrati."],
+        "specs": {"Dimensioni": "80 x 30 x 180 cm", "Imballo": "96 x 39 x 18 cm", "Peso netto": "22 kg", "Carico massimo": "20 kg per ripiano", "Materiale": "Legno ingegnerizzato, telaio in acciaio, piedini regolabili", "Parti incluse": "5 ripiani, 2 telai laterali, barre trasversali, viti, kit parete, chiave a brugola"},
+        "installation": ["Disporre tutte le parti su un pavimento pulito e confrontare le etichette con la lista.", "Fissare le barre inferiori ai telai laterali senza stringere completamente.", "Installare i ripiani dal basso verso l'alto usando i fori segnati.", "Stringere tutte le viti del telaio dopo aver allineato ogni ripiano.", "Regolare i piedini finche la libreria e stabile.", "Fissare la cinghia antiribaltamento alla parete prima di caricare i libri."],
+        "safety": ["Installare sempre il kit antiribaltamento in presenza di bambini o animali.", "Mettere prima i libri pesanti sui ripiani inferiori.", "Non arrampicarsi e non appendersi ai ripiani.", "Usare solo su pavimento interno livellato.", "Controllare viti e tasselli ogni 3 mesi."],
+        "care": ["Spolverare con panno morbido asciutto.", "Asciugare subito i liquidi versati.", "Evitare pioggia, vapore e lunga esposizione al sole.", "Non usare detergenti abrasivi o lana d'acciaio."],
+        "faq": [{"q": "Deve essere fissata alla parete?", "a": "Si. Il kit antiribaltamento deve essere installato per un uso piu sicuro."}, {"q": "Posso mettere una stampante?", "a": "Si, se il peso rientra nel limite per ripiano e la stampante e su un ripiano basso."}]
+      },
+      "fr": {
+        "name": "Bibliotheque a cinq niveaux",
+        "title": "Bibliotheque industrielle 5 niveaux pour salon, bureau et etude",
+        "summary": "Une etagere verticale pour livres, decoration et fournitures de bureau, avec panneaux etiquetes et kit anti-basculement.",
+        "bullets": ["Cinq etageres ouvertes pour livres et objets deco.", "Cadre en acier thermolaque avec tablettes en bois d'ingenierie.", "Pieds reglables pour stabiliser le meuble sur sol interieur.", "Kit anti-basculement mural inclus.", "Colis plat avec pieces numerotees et etapes illustrees."],
+        "specs": {"Dimensions": "80 x 30 x 180 cm", "Colis": "96 x 39 x 18 cm", "Poids net": "22 kg", "Charge maximale": "20 kg par tablette", "Materiau": "Bois d'ingenierie, cadre acier, pieds reglables", "Pieces incluses": "5 tablettes, 2 cadres lateraux, barres, vis, kit mural, cle Allen"},
+        "installation": ["Disposez toutes les pieces sur un sol propre et verifiez les etiquettes.", "Fixez les barres inferieures aux cadres lateraux sans serrer completement.", "Installez les tablettes de bas en haut avec les trous marques.", "Serrez les vis du cadre apres alignement de chaque tablette.", "Reglez les pieds jusqu'a ce que la bibliotheque soit stable.", "Fixez la sangle anti-basculement au mur avant de charger les livres."],
+        "safety": ["Installez toujours le kit anti-basculement en presence d'enfants ou d'animaux.", "Placez les livres lourds sur les tablettes inferieures.", "Ne grimpez pas et ne vous suspendez pas aux etageres.", "Utilisez uniquement sur un sol interieur plat.", "Controlez les vis et ancrages tous les 3 mois."],
+        "care": ["Depoussierez avec un chiffon doux sec.", "Essuyez immediatement les liquides renverses.", "Evitez pluie, vapeur et longue exposition au soleil.", "N'utilisez pas de produits abrasifs ni de laine d'acier."],
+        "faq": [{"q": "Faut-il la fixer au mur?", "a": "Oui. Le kit anti-basculement doit etre installe pour plus de securite."}, {"q": "Puis-je poser une imprimante?", "a": "Oui, si son poids respecte la limite par tablette et si elle est placee en bas."}]
+      },
+      "es": {
+        "name": "Estanteria de cinco niveles",
+        "title": "Librero industrial de 5 niveles para sala, estudio y oficina",
+        "summary": "Una estanteria vertical para libros, decoracion y utiles de oficina, con tablas etiquetadas y kit antivuelco.",
+        "bullets": ["Cinco estantes abiertos para libros y decoracion.", "Estructura de acero con recubrimiento y tableros de madera industrial.", "Patas ajustables para nivelar en suelos interiores.", "Incluye herrajes de pared antivuelco.", "Paquete plano con piezas numeradas y pasos ilustrados."],
+        "specs": {"Dimensiones": "80 x 30 x 180 cm", "Paquete": "96 x 39 x 18 cm", "Peso neto": "22 kg", "Carga maxima": "20 kg por estante", "Material": "Madera industrial, estructura de acero, patas ajustables", "Piezas incluidas": "5 estantes, 2 marcos laterales, barras, tornillos, kit pared, llave Allen"},
+        "installation": ["Coloque todas las piezas en un suelo limpio y compare las etiquetas con la lista.", "Fije las barras inferiores a los marcos laterales sin apretar del todo.", "Instale los estantes de abajo hacia arriba usando los orificios marcados.", "Apriete todos los tornillos del marco cuando cada estante este alineado.", "Ajuste las patas hasta que la estanteria quede estable.", "Fije la correa antivuelco a la pared antes de cargar libros."],
+        "safety": ["Instale siempre el kit antivuelco si hay ninos o mascotas.", "Coloque los libros pesados primero en los estantes inferiores.", "No trepe ni se cuelgue de los estantes.", "Use solo en suelo interior nivelado.", "Revise tornillos y anclajes cada 3 meses."],
+        "care": ["Quite el polvo con pano suave seco.", "Limpie derrames inmediatamente.", "Evite lluvia, vapor y exposicion prolongada al sol.", "No use limpiadores abrasivos ni lana de acero."],
+        "faq": [{"q": "Debe fijarse a la pared?", "a": "Si. El kit antivuelco debe instalarse para un uso mas seguro."}, {"q": "Puedo colocar una impresora?", "a": "Si, si el peso esta dentro del limite por estante y se coloca en un estante inferior."}]
+      },
+      "jp": {
+        "name": "5段ブックシェルフ",
+        "title": "リビング、書斎、オフィス用の5段ラック",
+        "summary": "本、雑貨、オフィス用品を収納できる縦型ラックです。番号付き部品と転倒防止キットが付属します。",
+        "bullets": ["本や小物を置ける5段オープン棚。", "粉体塗装スチールフレームと木質棚板。", "アジャスターで室内床のがたつきを調整できます。", "安全のため壁固定用の転倒防止金具を同梱。", "番号付き部品と図解手順で組み立てやすい梱包。"],
+        "specs": {"本体サイズ": "80 x 30 x 180 cm", "梱包サイズ": "96 x 39 x 18 cm", "正味重量": "22 kg", "耐荷重": "各棚 20 kg", "材質": "木質ボード、スチールフレーム、アジャスター", "同梱物": "棚板5枚、側面フレーム2個、横バー、ネジ、壁固定キット、六角レンチ"},
+        "installation": ["すべての部品を清潔な床に並べ、番号を部品表と照合します。", "下部の横バーを左右フレームに仮止めします。", "印のある穴を使い、下から上へ棚板を取り付けます。", "各棚板の位置を合わせてからフレームのネジを締めます。", "アジャスターを回して本棚を水平にします。", "本を載せる前に転倒防止ベルトを壁に固定してください。"],
+        "safety": ["子供やペットがいる場合は必ず転倒防止キットを取り付けてください。", "重い本は下段から置いてください。", "棚に登ったりぶら下がったりしないでください。", "屋内の水平な床で使用してください。", "3か月ごとにネジと壁固定部を点検してください。"],
+        "care": ["乾いた柔らかい布でほこりを拭いてください。", "液体をこぼした場合はすぐに拭き取ってください。", "雨、蒸気、長時間の直射日光を避けてください。", "研磨剤やスチールウールは使用しないでください。"],
+        "faq": [{"q": "壁に固定する必要がありますか？", "a": "はい。安全のため転倒防止キットを取り付けてください。"}, {"q": "プリンターを置けますか？", "a": "各棚の耐荷重内で、下段に置く場合は使用できます。"}]
+      },
+      "cn": {
+        "name": "五层书架",
+        "title": "适用于客厅、书房和办公室的工业风五层书架",
+        "summary": "一款用于收纳书籍、装饰品和办公用品的立式书架，配有编号板件和防倾倒固定套件。",
+        "bullets": ["五层开放式层板，可摆放书籍和展示物。", "喷粉钢架搭配工程木层板，结构稳定。", "可调节脚垫帮助书架在室内地面保持平稳。", "附带墙面防倾倒固定件，提升日常使用安全性。", "平板包装，部件带编号，按图示步骤安装。"],
+        "specs": {"产品尺寸": "80 x 30 x 180 cm", "包装尺寸": "96 x 39 x 18 cm", "净重": "22 kg", "最大承重": "每层 20 kg", "材质": "工程木、钢制框架、可调节脚垫", "包装清单": "层板5块、侧框2个、横杆、螺丝、墙面固定套件、内六角扳手"},
+        "installation": ["将所有部件放在干净地面上，并按编号核对部件清单。", "把下方横杆连接到两侧框架，先不要完全拧紧。", "从下往上安装层板，对准标记孔位。", "每层层板对齐后，再逐步拧紧框架螺丝。", "调节底部脚垫，直到书架平稳站立。", "放置书籍前，请先把防倾倒绑带固定到墙面。"],
+        "safety": ["有儿童或宠物的环境中必须安装防倾倒套件。", "重书请优先放在下层层板。", "请勿攀爬或悬挂在书架上。", "仅适用于室内平整地面。", "建议每3个月检查螺丝和墙面固定件。"],
+        "care": ["使用干燥柔软布料除尘。", "液体洒落后请立即擦干。", "避免雨淋、蒸汽和长时间阳光暴晒。", "请勿使用研磨性清洁剂或钢丝球。"],
+        "faq": [{"q": "书架必须固定到墙上吗？", "a": "是的。为提升安全性，建议安装防倾倒固定套件。"}, {"q": "可以放打印机吗？", "a": "可以，但重量必须在单层承重范围内，并建议放在下层。"}]
+      }
+    }
+  },
+  {
+    "id": "ergonomic-office-chair",
+    "category": "furniture",
+    "image": "/static/images/office-chair.svg",
+    "aliases": {
+      "en": ["office chair", "desk chair", "ergonomic chair", "chair"],
+      "de": ["buerostuhl", "stuhl"],
+      "it": ["sedia ufficio", "sedia ergonomica"],
+      "fr": ["chaise de bureau", "chaise ergonomique"],
+      "es": ["silla de oficina", "silla ergonomica"],
+      "jp": ["オフィスチェア", "椅子", "チェア"],
+      "cn": ["办公椅", "电脑椅", "人体工学椅", "椅子", "凳子", "座椅"]
+    },
+    "reference_sources": ["Amazon product research keywords: ergonomic office chair, mesh desk chair, gas lift, armrest assembly"],
+    "source_notes": "Demo office-chair manual content is rewritten from common furniture assembly and safety patterns.",
+    "languages": {
+      "en": {
+        "name": "Ergonomic Mesh Office Chair",
+        "title": "Adjustable Mesh Desk Chair with Lumbar Support and Armrests",
+        "summary": "A breathable office chair for home workstations, with adjustable height, lumbar support, armrests, and smooth casters.",
+        "bullets": ["Breathable mesh back supports long sitting sessions.", "Height-adjustable gas lift fits most desks.", "Curved lumbar support helps maintain posture.", "Padded seat and fixed armrests improve daily comfort.", "Five-star base with smooth indoor casters."],
+        "specs": {"Dimensions": "62 x 62 x 92-102 cm", "Seat height": "45-55 cm", "Net weight": "13 kg", "Max load": "120 kg", "Material": "Mesh, foam, nylon base, steel gas lift", "Included parts": "Seat, backrest, armrests, gas lift, base, 5 casters, screws, Allen key"},
+        "installation": ["Press all five casters firmly into the chair base.", "Insert the gas lift into the center hole of the base.", "Attach the armrests to the seat underside using the marked screws.", "Fix the backrest bracket to the seat plate.", "Place the assembled seat onto the gas lift and press down firmly.", "Sit carefully and test height adjustment before full use."],
+        "safety": ["Use the chair only for one seated person.", "Do not stand on the chair or use it as a step stool.", "Keep fingers away from moving brackets during assembly.", "Use only on indoor floors suitable for casters.", "Stop using the chair if the gas lift or base is damaged."],
+        "care": ["Vacuum the mesh back regularly.", "Spot clean fabric with mild soap and a damp cloth.", "Keep casters free from hair and debris.", "Tighten screws every 3 months."],
+        "faq": [{"q": "Why does the chair feel loose after assembly?", "a": "Check that the armrest and backrest screws are tightened evenly."}, {"q": "Can the chair be used on carpet?", "a": "It can roll on low-pile carpet, but a chair mat is recommended."}]
+      },
+      "de": {
+        "name": "Ergonomischer Netz-Buerostuhl",
+        "title": "Hoehenverstellbarer Schreibtischstuhl mit Lordosenstuetze und Armlehnen",
+        "summary": "Ein atmungsaktiver Buerostuhl fuer das Homeoffice, mit Hoehenverstellung, Lordosenstuetze, Armlehnen und leichtgaengigen Rollen.",
+        "bullets": ["Atmungsaktive Netzrueckenlehne fuer langes Sitzen.", "Hoehenverstellbare Gasfeder fuer die meisten Schreibtische.", "Gebogene Lordosenstuetze foerdert die Sitzhaltung.", "Gepolsterter Sitz und feste Armlehnen fuer Komfort.", "Fuenfsternfuss mit Rollen fuer Innenboeden."],
+        "specs": {"Masse": "62 x 62 x 92-102 cm", "Sitzhoehe": "45-55 cm", "Nettogewicht": "13 kg", "Maximale Last": "120 kg", "Material": "Netz, Schaum, Nylonfuss, Stahl-Gasfeder", "Lieferumfang": "Sitz, Rueckenlehne, Armlehnen, Gasfeder, Fuss, 5 Rollen, Schrauben, Inbusschluessel"},
+        "installation": ["Druecken Sie alle fuenf Rollen fest in den Stuhlfuss.", "Setzen Sie die Gasfeder in die Mitte des Fusses ein.", "Befestigen Sie die Armlehnen mit den markierten Schrauben unter dem Sitz.", "Montieren Sie die Rueckenlehnenhalterung an der Sitzplatte.", "Setzen Sie den Sitz auf die Gasfeder und druecken Sie ihn fest nach unten.", "Setzen Sie sich vorsichtig und testen Sie die Hoehenverstellung."],
+        "safety": ["Nur fuer eine sitzende Person verwenden.", "Nicht auf den Stuhl stellen oder als Tritt benutzen.", "Finger bei der Montage von beweglichen Haltern fernhalten.", "Nur auf fuer Rollen geeigneten Innenboeden verwenden.", "Bei beschaedigter Gasfeder oder Fuss nicht weiter verwenden."],
+        "care": ["Netzruecken regelmaessig absaugen.", "Stoff mit milder Seife und feuchtem Tuch punktuell reinigen.", "Rollen frei von Haaren und Schmutz halten.", "Schrauben alle 3 Monate nachziehen."],
+        "faq": [{"q": "Warum fuehlt sich der Stuhl locker an?", "a": "Pruefen Sie, ob Armlehnen- und Rueckenlehnenschrauben gleichmaessig festgezogen sind."}, {"q": "Kann er auf Teppich genutzt werden?", "a": "Auf kurzem Teppich ja, eine Bodenschutzmatte wird empfohlen."}]
+      },
+      "it": {
+        "name": "Sedia da ufficio ergonomica in rete",
+        "title": "Sedia da scrivania regolabile con supporto lombare e braccioli",
+        "summary": "Una sedia traspirante per postazioni domestiche, con altezza regolabile, supporto lombare, braccioli e ruote scorrevoli.",
+        "bullets": ["Schienale in rete traspirante per sedute prolungate.", "Pistone a gas regolabile in altezza.", "Supporto lombare curvo per aiutare la postura.", "Seduta imbottita e braccioli fissi per comfort quotidiano.", "Base a cinque razze con ruote per interni."],
+        "specs": {"Dimensioni": "62 x 62 x 92-102 cm", "Altezza seduta": "45-55 cm", "Peso netto": "13 kg", "Carico massimo": "120 kg", "Materiale": "Rete, schiuma, base in nylon, pistone in acciaio", "Parti incluse": "Sedile, schienale, braccioli, pistone, base, 5 ruote, viti, chiave a brugola"},
+        "installation": ["Premere le cinque ruote nella base.", "Inserire il pistone a gas nel foro centrale della base.", "Fissare i braccioli sotto il sedile con le viti segnate.", "Fissare la staffa dello schienale alla piastra del sedile.", "Posizionare il sedile montato sul pistone e premere con decisione.", "Sedersi con cautela e provare la regolazione in altezza."],
+        "safety": ["Usare la sedia solo per una persona seduta.", "Non stare in piedi sulla sedia e non usarla come scaletta.", "Tenere le dita lontane dalle staffe mobili durante il montaggio.", "Usare solo su pavimenti interni adatti alle ruote.", "Interrompere l'uso se pistone o base sono danneggiati."],
+        "care": ["Aspirare regolarmente lo schienale in rete.", "Pulire le macchie con sapone delicato e panno umido.", "Tenere le ruote libere da capelli e detriti.", "Stringere le viti ogni 3 mesi."],
+        "faq": [{"q": "Perche la sedia sembra allentata?", "a": "Controllare che le viti di braccioli e schienale siano serrate in modo uniforme."}, {"q": "Si puo usare su tappeto?", "a": "Su tappeti a pelo basso si, ma e consigliato un tappetino."}]
+      },
+      "fr": {
+        "name": "Chaise de bureau ergonomique en maille",
+        "title": "Chaise de bureau reglable avec soutien lombaire et accoudoirs",
+        "summary": "Une chaise respirante pour poste de travail a domicile, avec hauteur reglable, soutien lombaire, accoudoirs et roulettes.",
+        "bullets": ["Dossier en maille respirante pour les longues assises.", "Verin a gaz reglable en hauteur.", "Soutien lombaire courbe pour aider la posture.", "Assise rembourree et accoudoirs fixes pour le confort.", "Base cinq branches avec roulettes pour interieur."],
+        "specs": {"Dimensions": "62 x 62 x 92-102 cm", "Hauteur d'assise": "45-55 cm", "Poids net": "13 kg", "Charge maximale": "120 kg", "Materiau": "Maille, mousse, base nylon, verin acier", "Pieces incluses": "Assise, dossier, accoudoirs, verin, base, 5 roulettes, vis, cle Allen"},
+        "installation": ["Enfoncez fermement les cinq roulettes dans la base.", "Inserez le verin a gaz dans le trou central de la base.", "Fixez les accoudoirs sous l'assise avec les vis marquees.", "Fixez le support du dossier a la plaque d'assise.", "Posez l'assise assemblee sur le verin et appuyez fermement.", "Asseyez-vous prudemment et testez le reglage en hauteur."],
+        "safety": ["Utilisez la chaise pour une seule personne assise.", "Ne montez pas dessus et ne l'utilisez pas comme marchepied.", "Gardez les doigts loin des supports mobiles pendant le montage.", "Utilisez uniquement sur sols interieurs compatibles avec des roulettes.", "Cessez l'utilisation si le verin ou la base est endommage."],
+        "care": ["Aspirez regulierement le dossier en maille.", "Nettoyez les taches avec savon doux et chiffon humide.", "Gardez les roulettes sans cheveux ni debris.", "Resserrez les vis tous les 3 mois."],
+        "faq": [{"q": "Pourquoi la chaise semble-t-elle desserree?", "a": "Verifiez que les vis des accoudoirs et du dossier sont serrees uniformement."}, {"q": "Peut-elle etre utilisee sur moquette?", "a": "Oui sur moquette rase, mais un tapis de chaise est recommande."}]
+      },
+      "es": {
+        "name": "Silla de oficina ergonomica de malla",
+        "title": "Silla de escritorio ajustable con soporte lumbar y reposabrazos",
+        "summary": "Una silla transpirable para trabajar en casa, con altura regulable, soporte lumbar, reposabrazos y ruedas suaves.",
+        "bullets": ["Respaldo de malla transpirable para largas sesiones.", "Elevador de gas regulable en altura.", "Soporte lumbar curvo para ayudar la postura.", "Asiento acolchado y reposabrazos fijos para comodidad.", "Base de cinco puntas con ruedas para interior."],
+        "specs": {"Dimensiones": "62 x 62 x 92-102 cm", "Altura del asiento": "45-55 cm", "Peso neto": "13 kg", "Carga maxima": "120 kg", "Material": "Malla, espuma, base de nylon, elevador de acero", "Piezas incluidas": "Asiento, respaldo, reposabrazos, elevador, base, 5 ruedas, tornillos, llave Allen"},
+        "installation": ["Presione las cinco ruedas firmemente en la base.", "Inserte el elevador de gas en el orificio central de la base.", "Fije los reposabrazos debajo del asiento con los tornillos marcados.", "Fije el soporte del respaldo a la placa del asiento.", "Coloque el asiento montado sobre el elevador y presione firmemente.", "Sientese con cuidado y pruebe el ajuste de altura."],
+        "safety": ["Use la silla solo para una persona sentada.", "No se ponga de pie ni la use como escalon.", "Mantenga los dedos lejos de soportes moviles durante el montaje.", "Use solo en suelos interiores adecuados para ruedas.", "Deje de usarla si el elevador o la base estan danados."],
+        "care": ["Aspire el respaldo de malla regularmente.", "Limpie manchas con jabon suave y pano humedo.", "Mantenga las ruedas libres de pelo y residuos.", "Apriete tornillos cada 3 meses."],
+        "faq": [{"q": "Por que la silla queda floja?", "a": "Revise que los tornillos de reposabrazos y respaldo esten apretados uniformemente."}, {"q": "Puede usarse sobre alfombra?", "a": "Puede rodar en alfombra baja, pero se recomienda una alfombrilla."}]
+      },
+      "jp": {
+        "name": "メッシュオフィスチェア",
+        "title": "ランバーサポートとアームレスト付き昇降式デスクチェア",
+        "summary": "在宅ワーク向けの通気性のよいチェアです。高さ調整、腰サポート、アームレスト、キャスターを備えています。",
+        "bullets": ["長時間座っても蒸れにくいメッシュ背もたれ。", "多くのデスクに合わせやすい昇降ガスシリンダー。", "姿勢を支えるカーブ形状のランバーサポート。", "クッション座面と固定アームレストで日常使用を快適に。", "室内用キャスター付き5本脚ベース。"],
+        "specs": {"本体サイズ": "62 x 62 x 92-102 cm", "座面高": "45-55 cm", "正味重量": "13 kg", "耐荷重": "120 kg", "材質": "メッシュ、フォーム、ナイロンベース、スチールガスシリンダー", "同梱物": "座面、背もたれ、アームレスト、ガスシリンダー、ベース、キャスター5個、ネジ、六角レンチ"},
+        "installation": ["5個のキャスターをベースにしっかり差し込みます。", "ガスシリンダーをベース中央の穴に差し込みます。", "印のあるネジでアームレストを座面裏に固定します。", "背もたれブラケットを座面プレートに固定します。", "組み立てた座面をガスシリンダーに載せ、しっかり押し込みます。", "慎重に座り、高さ調整を確認してから使用してください。"],
+        "safety": ["椅子は1人が座る用途のみに使用してください。", "椅子の上に立ったり踏み台として使わないでください。", "組み立て中は可動金具に指を近づけないでください。", "キャスターに適した室内床で使用してください。", "ガスシリンダーやベースが破損した場合は使用を中止してください。"],
+        "care": ["メッシュ背もたれは定期的に掃除機で清掃してください。", "布地の汚れは中性洗剤と湿った布で部分清掃してください。", "キャスターに髪の毛やゴミが絡まないようにしてください。", "3か月ごとにネジを締め直してください。"],
+        "faq": [{"q": "組み立て後にぐらつくのはなぜですか？", "a": "アームレストと背もたれのネジが均等に締まっているか確認してください。"}, {"q": "カーペットで使えますか？", "a": "毛足の短いカーペットでは使えますが、チェアマットの使用をおすすめします。"}]
+      },
+      "cn": {
+        "name": "人体工学网布办公椅",
+        "title": "带腰托和扶手的可调节网布电脑椅",
+        "summary": "一款适合家庭办公的透气网布办公椅，支持座椅升降、腰部支撑、扶手和顺滑脚轮。",
+        "bullets": ["透气网布靠背，适合较长时间办公。", "气压杆可调节座椅高度，适配多数办公桌。", "弧形腰托帮助保持坐姿。", "加厚坐垫和固定扶手提升日常舒适度。", "五星脚底座搭配室内顺滑脚轮。"],
+        "specs": {"产品尺寸": "62 x 62 x 92-102 cm", "座高": "45-55 cm", "净重": "13 kg", "最大承重": "120 kg", "材质": "网布、海绵、尼龙底座、钢制气压杆", "包装清单": "坐垫、靠背、扶手、气压杆、底座、脚轮5个、螺丝、内六角扳手"},
+        "installation": ["将5个脚轮用力压入五星脚底座。", "把气压杆插入底座中心孔。", "用标记螺丝将扶手固定到坐垫底部。", "将靠背支架固定到坐垫底盘。", "把组装好的坐垫放到气压杆上，并向下压紧。", "首次使用前请轻坐测试升降功能。"],
+        "safety": ["办公椅仅供一人坐用。", "请勿站在椅子上或当作梯凳使用。", "安装过程中手指远离活动支架。", "仅在适合脚轮滚动的室内地面使用。", "如气压杆或底座损坏，请停止使用。"],
+        "care": ["定期用吸尘器清理网布靠背。", "局部污渍可用温和肥皂和湿布擦拭。", "保持脚轮无头发和杂物缠绕。", "建议每3个月复紧螺丝。"],
+        "faq": [{"q": "安装后椅子有点松怎么办？", "a": "请检查扶手和靠背螺丝是否均匀拧紧。"}, {"q": "可以在地毯上使用吗？", "a": "可在短绒地毯上使用，但建议搭配椅垫。"}]
+      }
+    }
+  },
+  {
+    "id": "two-door-storage-cabinet",
+    "category": "furniture",
+    "image": "/static/images/storage-cabinet.svg",
+    "aliases": {
+      "en": ["storage cabinet", "sideboard", "cabinet", "cupboard"],
+      "de": ["schrank", "aufbewahrungsschrank"],
+      "it": ["mobile contenitore", "credenza", "armadietto"],
+      "fr": ["meuble de rangement", "buffet", "armoire"],
+      "es": ["armario", "aparador", "mueble de almacenamiento"],
+      "jp": ["収納キャビネット", "キャビネット", "棚"],
+      "cn": ["储物柜", "收纳柜", "边柜", "柜子"]
+    },
+    "reference_sources": ["Amazon product research keywords: two door storage cabinet, sideboard cabinet, adjustable shelf, hinge alignment"],
+    "source_notes": "Demo storage-cabinet manual content is rewritten from common cabinet assembly instructions.",
+    "languages": {
+      "en": {
+        "name": "Two-Door Storage Cabinet",
+        "title": "Wood Storage Cabinet with Adjustable Shelf for Entryway and Living Room",
+        "summary": "A compact two-door cabinet for household storage, with an adjustable inner shelf, magnetic catches, and wall anti-tip hardware.",
+        "bullets": ["Two-door enclosed storage keeps items out of sight.", "Adjustable shelf supports different item heights.", "Magnetic door catches help doors close securely.", "Raised legs make floor cleaning easier.", "Includes wall anti-tip hardware and labeled panels."],
+        "specs": {"Dimensions": "78 x 36 x 90 cm", "Package": "98 x 48 x 16 cm", "Net weight": "28 kg", "Max load": "30 kg top, 15 kg shelf", "Material": "Engineered wood, metal hinges, magnetic catches", "Included parts": "Panels, doors, adjustable shelf, hinges, legs, handles, screws, wall anchor kit"},
+        "installation": ["Identify each panel by label before assembly.", "Connect the side panels, bottom panel, and top panel with cam locks.", "Insert shelf pins at the desired height and place the adjustable shelf.", "Attach the back panel and confirm the cabinet is square.", "Install hinges on both doors, then attach handles.", "Adjust hinge screws until the door gaps are even, then install the anti-tip kit."],
+        "safety": ["Install the wall anti-tip kit before use.", "Do not place heavy appliances on the top panel.", "Keep doors closed when not accessing items.", "Load heavier items on the lower shelf.", "Do not move the cabinet while it is loaded."],
+        "care": ["Wipe with a soft damp cloth and dry immediately.", "Avoid soaking the panels or using steam cleaners.", "Protect the top from hot cookware and wet plants.", "Retighten handles and hinges every 3 months."],
+        "faq": [{"q": "The doors are uneven. What should I do?", "a": "Use the hinge adjustment screws to move each door left, right, up, or down."}, {"q": "Can the shelf height be changed later?", "a": "Yes. Remove items first, then move the shelf pins to another hole level."}]
+      },
+      "de": {
+        "name": "Zweitueriger Aufbewahrungsschrank",
+        "title": "Holzschrank mit verstellbarem Einlegeboden fuer Flur und Wohnzimmer",
+        "summary": "Ein kompakter zweitueriger Schrank mit verstellbarem Innenboden, Magnetverschluessen und Kippschutz.",
+        "bullets": ["Geschlossene Aufbewahrung hinter zwei Tueren.", "Verstellbarer Boden fuer unterschiedliche Gegenstandshoehen.", "Magnetverschluesse halten die Tueren geschlossen.", "Erhoehte Beine erleichtern die Bodenreinigung.", "Inklusive Kippschutz und markierten Platten."],
+        "specs": {"Masse": "78 x 36 x 90 cm", "Paket": "98 x 48 x 16 cm", "Nettogewicht": "28 kg", "Maximale Last": "30 kg oben, 15 kg Boden", "Material": "Holzwerkstoff, Metall-Scharniere, Magnetverschluesse", "Lieferumfang": "Platten, Tueren, verstellbarer Boden, Scharniere, Beine, Griffe, Schrauben, Wandanker-Set"},
+        "installation": ["Identifizieren Sie jede Platte vor der Montage anhand der Markierung.", "Verbinden Sie Seitenteile, Boden und Deckplatte mit Exzenterverbindern.", "Setzen Sie Bodentraeger auf gewuenschter Hoehe ein und legen Sie den Einlegeboden auf.", "Befestigen Sie die Rueckwand und pruefen Sie den rechten Winkel.", "Montieren Sie Scharniere an beiden Tueren und danach die Griffe.", "Justieren Sie die Scharniere, bis die Spaltmasse gleich sind, dann Kippschutz montieren."],
+        "safety": ["Kippschutz vor Nutzung an der Wand befestigen.", "Keine schweren Geraete auf die Deckplatte stellen.", "Tueren geschlossen halten, wenn nichts entnommen wird.", "Schwere Gegenstaende unten lagern.", "Schrank nicht beladen bewegen."],
+        "care": ["Mit weichem feuchtem Tuch abwischen und sofort trocknen.", "Platten nicht einweichen und keine Dampfreiniger verwenden.", "Oberseite vor heissen Toepfen und nassen Pflanzen schuetzen.", "Griffe und Scharniere alle 3 Monate nachziehen."],
+        "faq": [{"q": "Die Tueren sind ungleich. Was tun?", "a": "Mit den Einstellschrauben der Scharniere koennen Sie die Tueren seitlich, hoch oder runter bewegen."}, {"q": "Kann die Regalhoehe spaeter geaendert werden?", "a": "Ja. Erst ausraeumen, dann die Bodentraeger in andere Loecher setzen."}]
+      },
+      "it": {
+        "name": "Mobile contenitore a due ante",
+        "title": "Mobile in legno con ripiano regolabile per ingresso e soggiorno",
+        "summary": "Un mobile compatto a due ante con ripiano interno regolabile, chiusure magnetiche e kit antiribaltamento.",
+        "bullets": ["Spazio chiuso a due ante per nascondere gli oggetti.", "Ripiano regolabile per altezze diverse.", "Chiusure magnetiche per tenere le ante chiuse.", "Gambe rialzate per pulire facilmente il pavimento.", "Include kit antiribaltamento e pannelli etichettati."],
+        "specs": {"Dimensioni": "78 x 36 x 90 cm", "Imballo": "98 x 48 x 16 cm", "Peso netto": "28 kg", "Carico massimo": "30 kg piano superiore, 15 kg ripiano", "Materiale": "Legno ingegnerizzato, cerniere metalliche, chiusure magnetiche", "Parti incluse": "Pannelli, ante, ripiano regolabile, cerniere, gambe, maniglie, viti, kit parete"},
+        "installation": ["Identificare ogni pannello tramite etichetta prima del montaggio.", "Collegare fianchi, fondo e piano superiore con giunti eccentrici.", "Inserire i supporti del ripiano all'altezza desiderata e posare il ripiano.", "Fissare il pannello posteriore e verificare che il mobile sia in squadra.", "Installare le cerniere sulle ante, poi fissare le maniglie.", "Regolare le viti delle cerniere finche le fughe sono uniformi, poi fissare il kit antiribaltamento."],
+        "safety": ["Installare il kit antiribaltamento prima dell'uso.", "Non mettere elettrodomestici pesanti sul piano superiore.", "Tenere le ante chiuse quando non si usano.", "Mettere gli oggetti pesanti sul ripiano inferiore.", "Non spostare il mobile quando e carico."],
+        "care": ["Pulire con panno morbido umido e asciugare subito.", "Non bagnare i pannelli e non usare pulitori a vapore.", "Proteggere il piano da pentole calde e piante bagnate.", "Stringere maniglie e cerniere ogni 3 mesi."],
+        "faq": [{"q": "Le ante non sono allineate. Cosa fare?", "a": "Usare le viti di regolazione delle cerniere per spostare ogni anta."}, {"q": "Posso cambiare altezza del ripiano dopo?", "a": "Si. Rimuovere gli oggetti e spostare i supporti in altri fori."}]
+      },
+      "fr": {
+        "name": "Meuble de rangement deux portes",
+        "title": "Meuble en bois avec etagere reglable pour entree et salon",
+        "summary": "Un meuble compact a deux portes avec etagere interne reglable, loquets magnetiques et kit anti-basculement.",
+        "bullets": ["Rangement ferme a deux portes.", "Etagere reglable pour differentes hauteurs d'objets.", "Loquets magnetiques pour bien fermer les portes.", "Pieds sureleves pour faciliter le nettoyage.", "Kit anti-basculement et panneaux etiquetes inclus."],
+        "specs": {"Dimensions": "78 x 36 x 90 cm", "Colis": "98 x 48 x 16 cm", "Poids net": "28 kg", "Charge maximale": "30 kg dessus, 15 kg etagere", "Materiau": "Bois d'ingenierie, charnieres metal, loquets magnetiques", "Pieces incluses": "Panneaux, portes, etagere reglable, charnieres, pieds, poignees, vis, kit mural"},
+        "installation": ["Identifiez chaque panneau par son etiquette avant montage.", "Assemblez les cotes, le fond et le dessus avec les verrous excentriques.", "Inserez les taquets a la hauteur souhaitee et posez l'etagere.", "Fixez le panneau arriere et verifiez que le meuble est d'equerre.", "Installez les charnieres sur les portes puis les poignees.", "Reglez les vis de charniere jusqu'a obtenir des ecarts reguliers, puis installez le kit mural."],
+        "safety": ["Installez le kit anti-basculement avant utilisation.", "Ne posez pas d'appareil lourd sur le dessus.", "Gardez les portes fermees hors utilisation.", "Placez les objets lourds en bas.", "Ne deplacez pas le meuble charge."],
+        "care": ["Essuyez avec un chiffon doux humide puis sechez.", "Ne detrempez pas les panneaux et n'utilisez pas de nettoyeur vapeur.", "Protegez le dessus des plats chauds et plantes humides.", "Resserrez poignees et charnieres tous les 3 mois."],
+        "faq": [{"q": "Les portes ne sont pas alignees. Que faire?", "a": "Utilisez les vis de reglage des charnieres pour deplacer chaque porte."}, {"q": "Peut-on changer la hauteur de l'etagere?", "a": "Oui. Retirez les objets puis deplacez les taquets dans d'autres trous."}]
+      },
+      "es": {
+        "name": "Armario de almacenamiento de dos puertas",
+        "title": "Mueble de madera con estante ajustable para entrada y sala",
+        "summary": "Un armario compacto de dos puertas con estante interior ajustable, cierres magneticos y kit antivuelco.",
+        "bullets": ["Almacenamiento cerrado de dos puertas.", "Estante ajustable para objetos de distintas alturas.", "Cierres magneticos para mantener las puertas cerradas.", "Patas elevadas para limpiar el suelo facilmente.", "Incluye kit antivuelco y paneles etiquetados."],
+        "specs": {"Dimensiones": "78 x 36 x 90 cm", "Paquete": "98 x 48 x 16 cm", "Peso neto": "28 kg", "Carga maxima": "30 kg arriba, 15 kg estante", "Material": "Madera industrial, bisagras metalicas, cierres magneticos", "Piezas incluidas": "Paneles, puertas, estante ajustable, bisagras, patas, tiradores, tornillos, kit pared"},
+        "installation": ["Identifique cada panel por etiqueta antes del montaje.", "Conecte laterales, base y tapa con cierres de leva.", "Inserte soportes a la altura deseada y coloque el estante.", "Fije el panel trasero y confirme que el mueble este escuadrado.", "Instale bisagras en ambas puertas y luego los tiradores.", "Ajuste tornillos de bisagra hasta que las separaciones sean uniformes, luego instale el kit antivuelco."],
+        "safety": ["Instale el kit antivuelco antes de usar.", "No coloque aparatos pesados sobre la tapa.", "Mantenga puertas cerradas cuando no acceda a objetos.", "Coloque objetos pesados en la parte inferior.", "No mueva el armario cargado."],
+        "care": ["Limpie con pano suave humedo y seque de inmediato.", "No empape los paneles ni use limpiadores de vapor.", "Proteja la tapa de ollas calientes y plantas mojadas.", "Apriete tiradores y bisagras cada 3 meses."],
+        "faq": [{"q": "Las puertas estan desiguales. Que hago?", "a": "Use los tornillos de ajuste de las bisagras para mover cada puerta."}, {"q": "Puedo cambiar la altura del estante?", "a": "Si. Retire los objetos y mueva los soportes a otros agujeros."}]
+      },
+      "jp": {
+        "name": "2ドア収納キャビネット",
+        "title": "玄関やリビング用の可動棚付き木製収納キャビネット",
+        "summary": "可動棚、マグネットキャッチ、転倒防止金具を備えたコンパクトな2ドア収納です。",
+        "bullets": ["2枚扉で中身を隠して収納できます。", "可動棚で収納物の高さに合わせられます。", "マグネットキャッチで扉をしっかり閉じます。", "脚付きで床掃除がしやすい設計。", "壁固定用転倒防止金具と番号付きパネルを同梱。"],
+        "specs": {"本体サイズ": "78 x 36 x 90 cm", "梱包サイズ": "98 x 48 x 16 cm", "正味重量": "28 kg", "耐荷重": "天板 30 kg、棚板 15 kg", "材質": "木質ボード、金属蝶番、マグネットキャッチ", "同梱物": "パネル、扉、可動棚、蝶番、脚、取っ手、ネジ、壁固定キット"},
+        "installation": ["組み立て前に各パネルの番号を確認します。", "側板、底板、天板をカムロックで接続します。", "希望の高さに棚ダボを差し込み、可動棚を置きます。", "背板を取り付け、キャビネットが直角になっているか確認します。", "両方の扉に蝶番を取り付け、取っ手を固定します。", "扉の隙間が均等になるまで蝶番ネジを調整し、転倒防止金具を取り付けます。"],
+        "safety": ["使用前に壁固定用転倒防止キットを取り付けてください。", "天板に重い家電を置かないでください。", "物を出し入れしない時は扉を閉めてください。", "重い物は下段に収納してください。", "収納物を入れたまま移動しないでください。"],
+        "care": ["柔らかい湿った布で拭き、すぐに乾かしてください。", "板を水浸しにしたりスチームクリーナーを使わないでください。", "熱い鍋や濡れた植物から天板を保護してください。", "3か月ごとに取っ手と蝶番を締め直してください。"],
+        "faq": [{"q": "扉がずれています。どうすればよいですか？", "a": "蝶番の調整ネジで扉を左右上下に調整してください。"}, {"q": "棚の高さは後から変えられますか？", "a": "はい。中身を取り出してから棚ダボを別の穴へ移動してください。"}]
+      },
+      "cn": {
+        "name": "双门储物柜",
+        "title": "适用于玄关和客厅的可调层板木质收纳柜",
+        "summary": "一款紧凑型双门储物柜，带可调节内部层板、磁吸门扣和墙面防倾倒固定件。",
+        "bullets": ["双门封闭式收纳，让物品不外露。", "可调节层板适配不同高度物品。", "磁吸门扣帮助柜门稳定闭合。", "抬高柜脚便于清洁地面。", "附带墙面防倾倒套件和编号板件。"],
+        "specs": {"产品尺寸": "78 x 36 x 90 cm", "包装尺寸": "98 x 48 x 16 cm", "净重": "28 kg", "最大承重": "顶板 30 kg，层板 15 kg", "材质": "工程木、金属铰链、磁吸门扣", "包装清单": "板件、柜门、可调层板、铰链、柜脚、拉手、螺丝、墙面固定套件"},
+        "installation": ["安装前请按标签识别每块板件。", "使用偏心连接件连接侧板、底板和顶板。", "按需要高度插入层板托，并放入可调层板。", "安装背板，并确认柜体保持方正。", "将铰链安装到两扇柜门上，再固定拉手。", "调节铰链螺丝直到柜门缝隙均匀，然后安装防倾倒套件。"],
+        "safety": ["使用前必须安装墙面防倾倒套件。", "请勿在顶板放置重型电器。", "不取放物品时请保持柜门关闭。", "较重物品请放在下层。", "柜内有物品时请勿移动柜体。"],
+        "care": ["使用柔软湿布擦拭，并立即擦干。", "避免板件长时间浸水，不要使用蒸汽清洁机。", "顶板请远离热锅具和潮湿盆栽。", "建议每3个月复紧拉手和铰链。"],
+        "faq": [{"q": "柜门不齐怎么办？", "a": "可以通过铰链调节螺丝微调柜门的左右、上下位置。"}, {"q": "层板高度后续可以调整吗？", "a": "可以。先取出物品，再把层板托移动到其他孔位。"}]
+      }
+    }
+  }
+]

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Manual Agent Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel product">
+        <div>
+          <p class="eyebrow">Cross-border e-commerce manual agent</p>
+          <h1>{{ localized.name }}</h1>
+          <p class="summary">{{ localized.summary }}</p>
+          <div class="actions">
+            <button id="pdfButton" type="button">Generate 7-language PDF</button>
+            <a id="downloadLink" class="download" href="#" hidden>Download PDF</a>
+          </div>
+        </div>
+        <img src="{{ product.image }}" alt="Solid wood table" />
+      </section>
+
+      <section class="workspace">
+        <div class="panel chat">
+          <div class="chat-head">
+            <div>
+              <p class="eyebrow">Ask the manual</p>
+          <h2>Same-language answers by default</h2>
+              <p class="hint">Leave product blank to let the agent match the furniture automatically.</p>
+            </div>
+            <select id="language">
+              <option value="">Auto</option>
+              <option value="en">EN</option>
+              <option value="de">DE</option>
+              <option value="it">IT</option>
+              <option value="fr">FR</option>
+              <option value="es">ES</option>
+              <option value="jp">JP</option>
+              <option value="cn">CN</option>
+            </select>
+          </div>
+          <select id="product">
+            <option value="">Auto match product</option>
+            {% for item in products %}
+            <option value="{{ item.id }}">{{ item.name }}</option>
+            {% endfor %}
+          </select>
+          <textarea id="question" rows="4">How do I assemble the table?</textarea>
+          <button id="askButton" type="button">Ask Agent</button>
+          <pre id="answer" class="answer">Ask a question about assembly, safety, dimensions, care, package contents, or warranty.</pre>
+        </div>
+
+        <div class="panel manual-preview">
+          <p class="eyebrow">Manual coverage</p>
+          <h2>EN / DE / IT / FR / ES / JP / CN</h2>
+          <ul>
+            <li>Product overview and selling points</li>
+            <li>Package contents and specifications</li>
+            <li>Step-by-step installation</li>
+            <li>Safety warnings and maintenance</li>
+            <li>FAQ for buyer support</li>
+          </ul>
+          <img src="/static/images/assembly-steps.svg" alt="Assembly steps" />
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const productId = "{{ product.id }}";
+      const askButton = document.querySelector("#askButton");
+      const pdfButton = document.querySelector("#pdfButton");
+      const question = document.querySelector("#question");
+      const language = document.querySelector("#language");
+      const answer = document.querySelector("#answer");
+      const downloadLink = document.querySelector("#downloadLink");
+
+      askButton.addEventListener("click", async () => {
+        askButton.disabled = true;
+        answer.textContent = "Thinking...";
+        try {
+          const response = await fetch("/api/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              product_id: document.querySelector("#product").value || null,
+              question: question.value,
+              language: language.value || null,
+            }),
+          });
+          const data = await response.json();
+          answer.textContent = data.answer;
+        } catch (error) {
+          answer.textContent = `Request failed: ${error}`;
+        } finally {
+          askButton.disabled = false;
+        }
+      });
+
+      pdfButton.addEventListener("click", async () => {
+        pdfButton.disabled = true;
+        pdfButton.textContent = "Generating...";
+        try {
+          const response = await fetch(`/api/manual/${productId}/pdf`, { method: "POST" });
+          const data = await response.json();
+          downloadLink.href = data.download_url;
+          downloadLink.hidden = false;
+          pdfButton.textContent = "Regenerate PDF";
+        } catch (error) {
+          pdfButton.textContent = "Generation failed";
+        } finally {
+          pdfButton.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+[
+  {
+    "id": "solid-oak-dining-table",
+    "category": "furniture",
+    "image": "/static/images/solid-oak-table.svg",
+    "reference_sources": [
+      "Amazon product research keywords: solid wood dining table, easy assembly, farmhouse dining table, wood desk",
+      "Reference examples found during research: ZINUS Jen Wood Dining Table, Plank+Beam solid wood dining tables, generic Amazon furniture bullet formats"
+    ],
+    "source_notes": "Demo content is rewritten from common public e-commerce product patterns: solid wood material, easy assembly, reinforced frame, care guidance, multi-country buyer support. It is not a verbatim copy of any listing.",
+    "languages": {
+      "en": {
+        "name": "Nordic Solid Wood Dining Table",
+        "title": "Solid Wood Dining Table for Kitchen, Dining Room, Home Office",
+        "summary": "A compact real-wood dining table designed for cross-border home buyers who need reliable packaging, simple assembly, and clear maintenance instructions.",
+        "bullets": [
+          "Solid rubberwood top with natural grain variation.",
+          "Seats 4 people for dining, studying, or home office use.",
+          "Reinforced apron and metal corner brackets improve stability.",
+          "Flat-pack parcel design with labeled hardware and illustrated steps.",
+          "Water-resistant lacquer finish; wipe clean with a soft damp cloth."
+        ],
+        "specs": {
+          "Dimensions": "120 x 75 x 75 cm",
+          "Package": "128 x 83 x 14 cm",
+          "Net weight": "24 kg",
+          "Max load": "100 kg evenly distributed",
+          "Material": "Rubberwood, steel brackets, water-based lacquer",
+          "Included parts": "1 tabletop, 4 legs, 4 corner brackets, M6 bolts, washers, Allen key"
+        },
+        "installation": [
+          "Place the tabletop upside down on clean cardboard or a soft blanket.",
+          "Align each leg with the corner holes. Keep the wider side facing outward.",
+          "Insert M6 bolts with washers by hand before tightening.",
+          "Attach the four metal corner brackets to the apron and legs.",
+          "Tighten all bolts gradually in a diagonal order. Do not over-tighten.",
+          "Turn the table upright with two people and check that all feet touch the floor."
+        ],
+        "safety": [
+          "Two adults are recommended for lifting and turning the table.",
+          "Do not stand, jump, or sit on the tabletop.",
+          "Keep small hardware away from children during assembly.",
+          "Use only on a level indoor floor.",
+          "Retighten bolts after the first 7 days of use and every 3 months."
+        ],
+        "care": [
+          "Wipe spills immediately.",
+          "Avoid direct heat, outdoor rain, and long sunlight exposure.",
+          "Use placemats under hot cookware and coasters under drinks.",
+          "Clean with a soft damp cloth; do not use abrasive cleaners."
+        ],
+        "faq": [
+          {
+            "q": "Can one person assemble it?",
+            "a": "One person can attach the legs, but two adults are recommended when turning the table upright."
+          },
+          {
+            "q": "Is the table waterproof?",
+            "a": "The surface is water-resistant for daily spills, but it is not designed for outdoor rain or standing water."
+          }
+        ]
+      },
+      "de": {
+        "name": "Nordischer Esstisch aus Massivholz",
+        "title": "Esstisch aus Massivholz fuer Kueche, Esszimmer und Homeoffice",
+        "summary": "Ein kompakter Echtholztisch fuer internationale Kunden, mit sicherer Verpackung, einfacher Montage und klarer Pflegeanleitung.",
+        "bullets": [
+          "Massive Gummibaumholzplatte mit natuerlicher Maserung.",
+          "Geeignet fuer 4 Personen, zum Essen, Arbeiten oder Lernen.",
+          "Verstaerkte Zarge und Metallecken erhoehen die Stabilitaet.",
+          "Flach verpackt, mit markierten Schrauben und bebilderten Schritten.",
+          "Wasserabweisende Lackierung; mit weichem feuchtem Tuch reinigen."
+        ],
+        "specs": {
+          "Masse": "120 x 75 x 75 cm",
+          "Paket": "128 x 83 x 14 cm",
+          "Nettogewicht": "24 kg",
+          "Maximale Last": "100 kg gleichmaessig verteilt",
+          "Material": "Gummibaumholz, Stahlwinkel, wasserbasierter Lack",
+          "Lieferumfang": "1 Tischplatte, 4 Beine, 4 Eckwinkel, M6-Schrauben, Unterlegscheiben, Inbusschluessel"
+        },
+        "installation": [
+          "Legen Sie die Tischplatte mit der Oberseite nach unten auf Karton oder eine weiche Decke.",
+          "Richten Sie jedes Bein an den Eckbohrungen aus. Die breitere Seite zeigt nach aussen.",
+          "Setzen Sie M6-Schrauben mit Unterlegscheiben zuerst von Hand ein.",
+          "Befestigen Sie die vier Metallwinkel an Zarge und Beinen.",
+          "Ziehen Sie alle Schrauben schrittweise diagonal fest. Nicht ueberdrehen.",
+          "Drehen Sie den Tisch zu zweit um und pruefen Sie, ob alle Fuesse den Boden beruehren."
+        ],
+        "safety": [
+          "Zwei Erwachsene werden zum Heben und Umdrehen empfohlen.",
+          "Nicht auf die Tischplatte stellen, springen oder setzen.",
+          "Kleinteile waehrend der Montage von Kindern fernhalten.",
+          "Nur auf ebenem Innenboden verwenden.",
+          "Schrauben nach 7 Tagen und danach alle 3 Monate nachziehen."
+        ],
+        "care": [
+          "Fluessigkeiten sofort abwischen.",
+          "Direkte Hitze, Regen und lange Sonneneinstrahlung vermeiden.",
+          "Untersetzer fuer heisse Toepfe und Getraenke verwenden.",
+          "Mit weichem feuchtem Tuch reinigen; keine Scheuermittel verwenden."
+        ],
+        "faq": [
+          {
+            "q": "Kann eine Person den Tisch montieren?",
+            "a": "Die Beine koennen allein montiert werden, aber zum Umdrehen werden zwei Erwachsene empfohlen."
+          },
+          {
+            "q": "Ist der Tisch wasserdicht?",
+            "a": "Die Oberflaeche ist wasserabweisend fuer Alltagsspritzer, aber nicht fuer Regen oder stehendes Wasser geeignet."
+          }
+        ]
+      },
+      "it": {
+        "name": "Tavolo da pranzo nordico in legno massello",
+        "title": "Tavolo in legno massello per cucina, sala da pranzo e ufficio domestico",
+        "summary": "Un tavolo compatto in vero legno pensato per acquirenti internazionali, con imballo sicuro, montaggio semplice e istruzioni chiare.",
+        "bullets": [
+          "Piano in legno di gomma massello con venature naturali.",
+          "Posti per 4 persone per pranzo, studio o lavoro da casa.",
+          "Grembiule rinforzato e staffe metalliche aumentano la stabilita.",
+          "Imballo piatto con ferramenta etichettata e passaggi illustrati.",
+          "Finitura laccata resistente all'acqua; pulire con panno morbido umido."
+        ],
+        "specs": {
+          "Dimensioni": "120 x 75 x 75 cm",
+          "Imballo": "128 x 83 x 14 cm",
+          "Peso netto": "24 kg",
+          "Carico massimo": "100 kg distribuiti uniformemente",
+          "Materiale": "Legno di gomma, staffe in acciaio, lacca a base d'acqua",
+          "Parti incluse": "1 piano, 4 gambe, 4 staffe angolari, bulloni M6, rondelle, chiave a brugola"
+        },
+        "installation": [
+          "Appoggiare il piano capovolto su cartone pulito o coperta morbida.",
+          "Allineare ogni gamba ai fori d'angolo. Il lato piu largo deve guardare verso l'esterno.",
+          "Inserire a mano i bulloni M6 con rondelle prima di stringere.",
+          "Fissare le quattro staffe metalliche al telaio e alle gambe.",
+          "Stringere tutti i bulloni gradualmente in ordine diagonale. Non stringere troppo.",
+          "Girare il tavolo in due persone e controllare che tutti i piedini tocchino il pavimento."
+        ],
+        "safety": [
+          "Si consigliano due adulti per sollevare e girare il tavolo.",
+          "Non stare in piedi, saltare o sedersi sul piano.",
+          "Tenere la ferramenta piccola lontano dai bambini durante il montaggio.",
+          "Usare solo su pavimento interno livellato.",
+          "Stringere di nuovo i bulloni dopo 7 giorni e poi ogni 3 mesi."
+        ],
+        "care": [
+          "Asciugare subito i liquidi versati.",
+          "Evitare calore diretto, pioggia e lunga esposizione al sole.",
+          "Usare sottopentola e sottobicchieri.",
+          "Pulire con panno morbido umido; non usare detergenti abrasivi."
+        ],
+        "faq": [
+          {
+            "q": "Puo montarlo una sola persona?",
+            "a": "Una persona puo fissare le gambe, ma per girare il tavolo sono consigliati due adulti."
+          },
+          {
+            "q": "Il tavolo e impermeabile?",
+            "a": "La superficie resiste agli schizzi quotidiani, ma non e adatta a pioggia o acqua stagnante."
+          }
+        ]
+      },
+      "fr": {
+        "name": "Table a manger nordique en bois massif",
+        "title": "Table en bois massif pour cuisine, salle a manger et bureau a domicile",
+        "summary": "Une table compacte en bois veritable pour les acheteurs internationaux, avec emballage fiable, montage simple et consignes claires.",
+        "bullets": [
+          "Plateau en hevea massif avec veinage naturel.",
+          "Convient a 4 personnes pour manger, etudier ou travailler.",
+          "Tablier renforce et equerres metalliques pour plus de stabilite.",
+          "Colis plat avec quincaillerie etiquetee et etapes illustrees.",
+          "Finition vernie resistante a l'eau; nettoyer avec un chiffon doux humide."
+        ],
+        "specs": {
+          "Dimensions": "120 x 75 x 75 cm",
+          "Colis": "128 x 83 x 14 cm",
+          "Poids net": "24 kg",
+          "Charge maximale": "100 kg repartis uniformement",
+          "Materiau": "Hevea, equerres en acier, vernis a base d'eau",
+          "Pieces incluses": "1 plateau, 4 pieds, 4 equerres, boulons M6, rondelles, cle Allen"
+        },
+        "installation": [
+          "Placez le plateau a l'envers sur un carton propre ou une couverture douce.",
+          "Alignez chaque pied avec les trous d'angle. Le cote le plus large doit etre vers l'exterieur.",
+          "Inserez les boulons M6 avec rondelles a la main avant de serrer.",
+          "Fixez les quatre equerres metalliques au tablier et aux pieds.",
+          "Serrez progressivement les boulons en diagonale. Ne serrez pas excessivement.",
+          "Retournez la table a deux personnes et verifiez que tous les pieds touchent le sol."
+        ],
+        "safety": [
+          "Deux adultes sont recommandes pour soulever et retourner la table.",
+          "Ne montez pas, ne sautez pas et ne vous asseyez pas sur le plateau.",
+          "Gardez les petites pieces hors de portee des enfants pendant le montage.",
+          "Utilisez uniquement sur un sol interieur plat.",
+          "Resserrez les boulons apres 7 jours puis tous les 3 mois."
+        ],
+        "care": [
+          "Essuyez immediatement les liquides renverses.",
+          "Evitez la chaleur directe, la pluie et l'exposition prolongee au soleil.",
+          "Utilisez des dessous de plat et des sous-verres.",
+          "Nettoyez avec un chiffon doux humide; n'utilisez pas de produits abrasifs."
+        ],
+        "faq": [
+          {
+            "q": "Une seule personne peut-elle l'assembler?",
+            "a": "Une personne peut fixer les pieds, mais deux adultes sont recommandes pour retourner la table."
+          },
+          {
+            "q": "La table est-elle impermeable?",
+            "a": "La surface resiste aux eclaboussures quotidiennes, mais elle n'est pas concue pour la pluie ou l'eau stagnante."
+          }
+        ]
+      },
+      "es": {
+        "name": "Mesa de comedor nordica de madera maciza",
+        "title": "Mesa de madera maciza para cocina, comedor y oficina en casa",
+        "summary": "Una mesa compacta de madera real para compradores internacionales, con embalaje fiable, montaje sencillo e instrucciones claras.",
+        "bullets": [
+          "Tablero de madera maciza de caucho con veta natural.",
+          "Asientos para 4 personas para comer, estudiar o trabajar.",
+          "Faldon reforzado y escuadras metalicas mejoran la estabilidad.",
+          "Paquete plano con herrajes etiquetados y pasos ilustrados.",
+          "Acabado lacado resistente al agua; limpiar con pano suave humedo."
+        ],
+        "specs": {
+          "Dimensiones": "120 x 75 x 75 cm",
+          "Paquete": "128 x 83 x 14 cm",
+          "Peso neto": "24 kg",
+          "Carga maxima": "100 kg distribuidos uniformemente",
+          "Material": "Madera de caucho, escuadras de acero, laca al agua",
+          "Piezas incluidas": "1 tablero, 4 patas, 4 escuadras, pernos M6, arandelas, llave Allen"
+        },
+        "installation": [
+          "Coloque el tablero boca abajo sobre carton limpio o una manta suave.",
+          "Alinee cada pata con los orificios de las esquinas. El lado ancho mira hacia fuera.",
+          "Inserte a mano los pernos M6 con arandelas antes de apretar.",
+          "Fije las cuatro escuadras metalicas al faldon y a las patas.",
+          "Apriete todos los pernos poco a poco en orden diagonal. No apriete en exceso.",
+          "Gire la mesa entre dos personas y compruebe que todas las patas toquen el suelo."
+        ],
+        "safety": [
+          "Se recomiendan dos adultos para levantar y girar la mesa.",
+          "No se ponga de pie, salte ni se siente sobre el tablero.",
+          "Mantenga los herrajes pequenos lejos de los ninos durante el montaje.",
+          "Use solo en suelo interior nivelado.",
+          "Vuelva a apretar los pernos despues de 7 dias y cada 3 meses."
+        ],
+        "care": [
+          "Limpie los derrames inmediatamente.",
+          "Evite calor directo, lluvia y exposicion prolongada al sol.",
+          "Use salvamanteles y posavasos.",
+          "Limpie con pano suave humedo; no use limpiadores abrasivos."
+        ],
+        "faq": [
+          {
+            "q": "Puede montarla una sola persona?",
+            "a": "Una persona puede fijar las patas, pero se recomiendan dos adultos para girar la mesa."
+          },
+          {
+            "q": "La mesa es impermeable?",
+            "a": "La superficie resiste derrames diarios, pero no esta disenada para lluvia ni agua estancada."
+          }
+        ]
+      },
+      "jp": {
+        "name": "北欧風 無垢材ダイニングテーブル",
+        "title": "キッチン、ダイニング、在宅ワーク用の無垢材テーブル",
+        "summary": "海外のお客様にも分かりやすいよう、梱包、組み立て、手入れ方法を明確にしたコンパクトな木製テーブルです。",
+        "bullets": [
+          "天然木目のあるラバーウッド無垢材天板。",
+          "食事、学習、在宅ワークに使える4人用サイズ。",
+          "補強幕板と金属コーナーブラケットで安定性を向上。",
+          "部品番号付きのフラット梱包で、図解手順に沿って組み立て可能。",
+          "日常の水はねに強い塗装。柔らかい湿った布で拭き取れます。"
+        ],
+        "specs": {
+          "本体サイズ": "120 x 75 x 75 cm",
+          "梱包サイズ": "128 x 83 x 14 cm",
+          "正味重量": "24 kg",
+          "耐荷重": "均等荷重 100 kg",
+          "材質": "ラバーウッド、スチール金具、水性ラッカー",
+          "同梱物": "天板1枚、脚4本、コーナーブラケット4個、M6ボルト、ワッシャー、六角レンチ"
+        },
+        "installation": [
+          "清潔な段ボールまたは柔らかい毛布の上に、天板を裏返して置きます。",
+          "各脚を角の穴に合わせます。広い面が外側を向くようにしてください。",
+          "M6ボルトとワッシャーを先に手で仮締めします。",
+          "4個の金属コーナーブラケットを幕板と脚に固定します。",
+          "対角順に少しずつ締めます。締め過ぎないでください。",
+          "必ず2人でテーブルを起こし、すべての脚が床に接しているか確認します。"
+        ],
+        "safety": [
+          "持ち上げや反転作業は大人2人で行ってください。",
+          "天板の上に立つ、跳ぶ、座る行為は禁止です。",
+          "組み立て中は小さな金具を子供の手の届かない場所に置いてください。",
+          "屋内の水平な床で使用してください。",
+          "使用開始から7日後、その後3か月ごとにボルトを締め直してください。"
+        ],
+        "care": [
+          "液体をこぼした場合はすぐに拭き取ってください。",
+          "直火、屋外の雨、長時間の直射日光を避けてください。",
+          "熱い鍋には鍋敷き、飲み物にはコースターを使用してください。",
+          "柔らかい湿った布で清掃し、研磨剤は使用しないでください。"
+        ],
+        "faq": [
+          {
+            "q": "1人で組み立てできますか？",
+            "a": "脚の取り付けは1人でも可能ですが、テーブルを起こす作業は大人2人で行ってください。"
+          },
+          {
+            "q": "防水ですか？",
+            "a": "日常の水はねには対応しますが、屋外の雨や水たまりでの使用はできません。"
+          }
+        ]
+      },
+      "cn": {
+        "name": "北欧实木餐桌",
+        "title": "适用于厨房、餐厅和家庭办公的实木桌",
+        "summary": "一款面向跨境电商买家的紧凑型实木餐桌，重点提供可靠包装、简单安装步骤和清晰的日常保养说明。",
+        "bullets": [
+          "橡胶木实木桌面，保留自然木纹差异。",
+          "适合4人用餐，也可用于学习或家庭办公。",
+          "加固围板和金属角码提升整体稳定性。",
+          "平板包装，五金件带编号，按图示步骤即可安装。",
+          "水性漆表面可应对日常水渍，请使用柔软湿布清洁。"
+        ],
+        "specs": {
+          "产品尺寸": "120 x 75 x 75 cm",
+          "包装尺寸": "128 x 83 x 14 cm",
+          "净重": "24 kg",
+          "最大承重": "均匀承重 100 kg",
+          "材质": "橡胶木、钢制角码、水性漆",
+          "包装清单": "桌面1块、桌腿4根、角码4个、M6螺栓、垫片、内六角扳手"
+        },
+        "installation": [
+          "将桌面正面朝下放在干净纸板或柔软毯子上，避免刮伤表面。",
+          "把每根桌腿对准桌角预留孔位，较宽的一面朝外。",
+          "先用手将M6螺栓和垫片预拧入孔位，不要一次性拧紧。",
+          "将4个金属角码固定在围板和桌腿之间。",
+          "按对角顺序逐步拧紧所有螺栓，避免过度用力。",
+          "请两名成人一起将桌子翻正，并确认四只桌脚都平稳接触地面。"
+        ],
+        "safety": [
+          "建议两名成人完成搬运和翻转操作。",
+          "请勿站在、跳上或坐在桌面上。",
+          "安装过程中请将小五金件放在儿童接触不到的位置。",
+          "仅适用于室内平整地面。",
+          "使用7天后请复紧螺栓，之后建议每3个月检查一次。"
+        ],
+        "care": [
+          "液体洒落后请立即擦干。",
+          "避免直接高温、户外雨淋和长时间阳光暴晒。",
+          "热锅具下请使用隔热垫，饮品下请使用杯垫。",
+          "使用柔软湿布清洁，请勿使用研磨性清洁剂。"
+        ],
+        "faq": [
+          {
+            "q": "一个人可以安装吗？",
+            "a": "一个人可以完成桌腿固定，但翻正桌子时建议两名成人一起操作。"
+          },
+          {
+            "q": "这张桌子防水吗？",
+            "a": "桌面可应对日常水渍，但不适合户外雨淋或长期积水环境。"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "en": ["english", "en", "us", "uk"],
+  "de": ["german", "deutsch", "de"],
+  "it": ["italian", "italiano", "it"],
+  "fr": ["french", "francais", "français", "fr"],
+  "es": ["spanish", "espanol", "español", "es"],
+  "jp": ["japanese", "日本語", "ja", "jp"],
+  "cn": ["chinese", "中文", "简体中文", "汉语", "zh", "zh-cn", "cn"]
+}

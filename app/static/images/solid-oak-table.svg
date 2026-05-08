@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Solid wood dining table illustration">
+  <rect width="960" height="540" fill="#f7f4ee"/>
+  <rect x="0" y="390" width="960" height="150" fill="#ded8cd"/>
+  <ellipse cx="480" cy="408" rx="315" ry="42" fill="#c9c0b2"/>
+  <path d="M215 220h530c28 0 48 19 42 40l-13 45c-4 13-20 22-39 22H225c-19 0-35-9-39-22l-13-45c-6-21 14-40 42-40z" fill="#9f6636"/>
+  <path d="M205 220h550c21 0 38 13 38 29v13H167v-13c0-16 17-29 38-29z" fill="#b97a44"/>
+  <path d="M190 259h580v24H190z" fill="#7b4a27"/>
+  <path d="M236 284h55l-27 178h-48z" fill="#86522d"/>
+  <path d="M669 284h55l20 178h-48z" fill="#86522d"/>
+  <path d="M333 286h48l-10 155h-42z" fill="#704324"/>
+  <path d="M579 286h48l4 155h-42z" fill="#704324"/>
+  <g opacity=".24" stroke="#6d3f21" stroke-width="7" stroke-linecap="round">
+    <path d="M224 242c73 18 145 17 216 0s143-19 216 0"/>
+    <path d="M256 276c89 19 181 18 275 0 75-14 137-12 185 0"/>
+    <path d="M236 304c82 14 171 15 267 2 88-12 162-11 221 2"/>
+  </g>
+  <g fill="#3f342b">
+    <circle cx="315" cy="309" r="7"/>
+    <circle cx="645" cy="309" r="7"/>
+    <circle cx="377" cy="309" r="7"/>
+    <circle cx="583" cy="309" r="7"/>
+  </g>
+  <text x="480" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#2c2c2c">Nordic Solid Wood Dining Table</text>
+  <text x="480" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#5d5a55">Demo product image for multilingual PDF manual</text>
+</svg>
