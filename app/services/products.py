@@ -4,15 +4,60 @@ import json
 from functools import lru_cache
 from typing import Any, Optional
 
-from app.config import FURNITURE_PRODUCTS_FILE, PRODUCTS_FILE
+from app.config import FURNITURE_PRODUCTS_FILE, PRODUCTS_FILE, SUPPORTED_LANGUAGES
 
 
-@lru_cache
-def load_products() -> list[dict[str, Any]]:
+def _builtin_products() -> list[dict[str, Any]]:
     products = json.loads(PRODUCTS_FILE.read_text(encoding="utf-8"))
     if FURNITURE_PRODUCTS_FILE.exists():
         products.extend(json.loads(FURNITURE_PRODUCTS_FILE.read_text(encoding="utf-8")))
     return products
+
+
+def _uploaded_products() -> list[dict[str, Any]]:
+    """Build product entries from uploaded manual records."""
+    from app.services.upload_manual import load_uploaded_manuals
+
+    manuals = load_uploaded_manuals()
+    products = []
+    for m in manuals:
+        entry = m.get("product_entry")
+        if entry:
+            products.append(entry)
+        else:
+            products.append(
+                {
+                    "id": m["product_id"],
+                    "category": "uploaded",
+                    "image": "",
+                    "source_notes": f"Uploaded manual: {m['original_filename']}",
+                    "reference_sources": [m["original_filename"]],
+                    "languages": {
+                        m.get("language", "en"): {
+                            "name": m["title"],
+                            "title": f"{m['title']} — Uploaded Manual",
+                            "summary": f"Uploaded from {m['original_filename']} ({m.get('section_count', 0)} sections).",
+                            "bullets": [f"Source: {m['original_filename']}"],
+                            "specs": {"Source": m["original_filename"]},
+                            "installation": [],
+                            "safety": [],
+                            "care": [],
+                            "faq": [],
+                        }
+                    },
+                }
+            )
+    return products
+
+
+@lru_cache
+def _cached_builtins() -> list[dict[str, Any]]:
+    return _builtin_products()
+
+
+def load_products() -> list[dict[str, Any]]:
+    """Load all products: built-in + uploaded. Returns a new list each call."""
+    return [*_cached_builtins(), *_uploaded_products()]
 
 
 def get_product(product_id: Optional[str] = None) -> dict[str, Any]:
@@ -38,6 +83,34 @@ def list_product_summaries(language: str = "en") -> list[dict[str, str]]:
             }
         )
     return summaries
+
+
+def product_languages(product: dict[str, Any]) -> list[str]:
+    """Languages a product has, ordered by SUPPORTED_LANGUAGES first."""
+    have = set(product["languages"].keys())
+    ordered = [lang for lang in SUPPORTED_LANGUAGES if lang in have]
+    ordered += [lang for lang in product["languages"] if lang not in ordered]
+    return ordered
+
+
+def list_documents(language: str = "en") -> list[dict[str, Any]]:
+    """Document-management view: every product as a downloadable document."""
+    documents = []
+    for product in load_products():
+        localized = product["languages"].get(language) or product["languages"]["en"]
+        is_uploaded = product["category"] == "uploaded"
+        documents.append(
+            {
+                "id": product["id"],
+                "category": product["category"],
+                "name": localized["name"],
+                "title": localized["title"],
+                "languages": product_languages(product),
+                "deletable": is_uploaded,
+                "source": "uploaded" if is_uploaded else "builtin",
+            }
+        )
+    return documents
 
 
 def _match_score(query: str, value: str) -> int:

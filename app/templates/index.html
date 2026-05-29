@@ -8,26 +8,34 @@
   </head>
   <body>
     <main class="shell">
+      <!-- Header -->
       <section class="panel product">
         <div>
           <p class="eyebrow">Cross-border e-commerce manual agent</p>
           <h1>{{ localized.name }}</h1>
           <p class="summary">{{ localized.summary }}</p>
           <div class="actions">
-            <button id="pdfButton" type="button">Generate 7-language PDF</button>
-            <a id="downloadLink" class="download" href="#" hidden>Download PDF</a>
+            <a class="download" href="#documents">📚 Document Center</a>
+            <a class="download" href="#llm-config">⚙️ LLM Config</a>
           </div>
         </div>
-        <img src="{{ product.image }}" alt="Solid wood table" />
+        {% if product.image %}
+        <img src="{{ product.image }}" alt="Product" />
+        {% else %}
+        <div class="product-placeholder">
+          <p>{{ (localized.name or '').split()[0] or 'Manual' }}</p>
+        </div>
+        {% endif %}
       </section>
 
-      <section class="workspace">
+      <!-- Q&A and Upload -->
+      <div class="workspace">
         <div class="panel chat">
           <div class="chat-head">
             <div>
               <p class="eyebrow">Ask the manual</p>
-          <h2>Same-language answers by default</h2>
-              <p class="hint">Leave product blank to let the agent match the furniture automatically.</p>
+              <h2>Multi-language Q&A</h2>
+              <p class="hint">Leave product blank to auto-match.</p>
             </div>
             <select id="language">
               <option value="">Auto</option>
@@ -46,72 +54,478 @@
             <option value="{{ item.id }}">{{ item.name }}</option>
             {% endfor %}
           </select>
-          <textarea id="question" rows="4">How do I assemble the table?</textarea>
-          <button id="askButton" type="button">Ask Agent</button>
-          <pre id="answer" class="answer">Ask a question about assembly, safety, dimensions, care, package contents, or warranty.</pre>
+          <textarea id="question" placeholder="How do I assemble this?" rows="3"></textarea>
+          <button id="ask-btn">Ask Agent</button>
+          <div id="answer-box" class="answer-box" style="display:none">
+            <p class="answer-meta"></p>
+            <div class="answer-text"></div>
+          </div>
         </div>
 
-        <div class="panel manual-preview">
-          <p class="eyebrow">Manual coverage</p>
-          <h2>EN / DE / IT / FR / ES / JP / CN</h2>
-          <ul>
-            <li>Product overview and selling points</li>
-            <li>Package contents and specifications</li>
-            <li>Step-by-step installation</li>
-            <li>Safety warnings and maintenance</li>
-            <li>FAQ for buyer support</li>
-          </ul>
-          <img src="/static/images/assembly-steps.svg" alt="Assembly steps" />
+        <div class="panel upload">
+          <p class="eyebrow">Upload manual</p>
+          <h2>Auto-translate to 7 languages</h2>
+          <p class="hint">Supports PDF and TXT. Auto-indexed for Q&A.</p>
+          <form id="upload-form">
+            <input type="file" id="file-input" accept=".pdf,.txt" />
+            <input type="text" id="title-input" placeholder="Product title (optional)" />
+            <button type="submit">Upload</button>
+          </form>
+          <p id="upload-status" class="upload-status"></p>
+        </div>
+      </div>
+
+      <!-- LLM Configuration -->
+      <section id="llm-config" class="panel llm-config">
+        <h2>⚙️ LLM Configuration</h2>
+        <p class="hint">
+          Configure your LLM API to enable auto-translation and smarter Q&A.
+        </p>
+
+        <div class="llm-status">
+          <p><strong>Status:</strong> <span id="llm-status-text">Loading...</span></p>
+          <p><strong>Translation:</strong> <span id="translation-status-text">—</span></p>
+        </div>
+
+        <form id="llm-config-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Provider</label>
+              <select id="llm-provider" required>
+                <option value="openai-compatible">OpenAI-Compatible</option>
+                <option value="anthropic">Anthropic (Claude)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Base URL</label>
+              <input type="url" id="llm-base-url" placeholder="https://api.openai.com/v1" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>API Key</label>
+            <input type="password" id="llm-api-key" placeholder="sk-..." required />
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="test-connection-btn" class="btn-secondary">Test Connection & Get Models</button>
+          </div>
+
+          <div id="model-list" style="display:none">
+            <p><strong>Available Models:</strong></p>
+            <div id="model-items"></div>
+          </div>
+
+          <div class="form-group" id="selected-model-group" style="display:none">
+            <label>Selected Model</label>
+            <input type="text" id="llm-model-name" readonly />
+          </div>
+
+          <button type="submit" id="save-config-btn" style="display:none">Save Configuration</button>
+        </form>
+
+        <p id="llm-config-status" class="upload-status"></p>
+      </section>
+
+      <!-- Document Center -->
+      <section id="documents" class="panel documents">
+        <h2>📚 Document Center</h2>
+        <p class="hint">
+          Select languages globally, then download PDFs for selected documents.
+        </p>
+
+        <!-- Global Language Selector -->
+        <div class="global-lang-selector">
+          <p>Select Languages:</p>
+          <div class="lang-chips">
+            <label class="lang-chip">
+              <input type="checkbox" value="en" checked />
+              <span>EN</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="de" checked />
+              <span>DE</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="it" checked />
+              <span>IT</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="fr" checked />
+              <span>FR</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="es" checked />
+              <span>ES</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="jp" checked />
+              <span>JP</span>
+            </label>
+            <label class="lang-chip">
+              <input type="checkbox" value="cn" checked />
+              <span>CN</span>
+            </label>
+          </div>
+          <button id="toggle-all-langs" class="lang-toggle">Select all / none</button>
+        </div>
+
+        <!-- Document Table -->
+        <div class="doc-table-wrapper">
+          <table class="doc-table">
+            <thead>
+              <tr>
+                <th style="width: 40px"><input type="checkbox" id="select-all-docs" /></th>
+                <th>Product Name</th>
+                <th style="width: 100px">Type</th>
+                <th style="width: 120px">Languages</th>
+                <th style="width: 100px">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="doc-table-body">
+              <tr>
+                <td colspan="5" class="loading">Loading documents...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Batch Actions -->
+        <div class="batch-actions">
+          <button id="batch-download-btn" class="batch-btn">Download Selected PDFs</button>
+          <button id="batch-delete-btn" class="batch-btn batch-delete">Delete Selected</button>
+          <span id="batch-status" class="batch-status"></span>
         </div>
       </section>
     </main>
 
     <script>
-      const productId = "{{ product.id }}";
-      const askButton = document.querySelector("#askButton");
-      const pdfButton = document.querySelector("#pdfButton");
-      const question = document.querySelector("#question");
-      const language = document.querySelector("#language");
-      const answer = document.querySelector("#answer");
-      const downloadLink = document.querySelector("#downloadLink");
+      // === Q&A ===
+      document.getElementById("ask-btn").addEventListener("click", async () => {
+        const question = document.getElementById("question").value.trim();
+        if (!question) return;
 
-      askButton.addEventListener("click", async () => {
-        askButton.disabled = true;
-        answer.textContent = "Thinking...";
+        const answerBox = document.getElementById("answer-box");
+        const answerMeta = answerBox.querySelector(".answer-meta");
+        const answerText = answerBox.querySelector(".answer-text");
+
+        answerBox.style.display = "block";
+        answerMeta.textContent = "Thinking...";
+        answerText.textContent = "";
+
+        const payload = {
+          question,
+          product_id: document.getElementById("product").value || null,
+          language: document.getElementById("language").value || null,
+        };
+
         try {
-          const response = await fetch("/api/ask", {
+          const res = await fetch("/api/ask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              product_id: document.querySelector("#product").value || null,
-              question: question.value,
-              language: language.value || null,
-            }),
+            body: JSON.stringify(payload),
           });
-          const data = await response.json();
-          answer.textContent = data.answer;
-        } catch (error) {
-          answer.textContent = `Request failed: ${error}`;
-        } finally {
-          askButton.disabled = false;
+          const data = await res.json();
+          answerMeta.textContent = `Language: ${data.language.toUpperCase()} | Product: ${data.product_id}`;
+          answerText.textContent = data.answer;
+        } catch (err) {
+          answerMeta.textContent = "Error";
+          answerText.textContent = err.message;
         }
       });
 
-      pdfButton.addEventListener("click", async () => {
-        pdfButton.disabled = true;
-        pdfButton.textContent = "Generating...";
+      // === Upload ===
+      document.getElementById("upload-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const fileInput = document.getElementById("file-input");
+        const titleInput = document.getElementById("title-input");
+        const status = document.getElementById("upload-status");
+
+        if (!fileInput.files[0]) {
+          status.textContent = "Please select a file.";
+          return;
+        }
+
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+        if (titleInput.value.trim()) {
+          formData.append("title", titleInput.value.trim());
+        }
+
+        status.textContent = "Uploading & translating...";
         try {
-          const response = await fetch(`/api/manual/${productId}/pdf`, { method: "POST" });
-          const data = await response.json();
-          downloadLink.href = data.download_url;
-          downloadLink.hidden = false;
-          pdfButton.textContent = "Regenerate PDF";
-        } catch (error) {
-          pdfButton.textContent = "Generation failed";
-        } finally {
-          pdfButton.disabled = false;
+          const res = await fetch("/api/manual/upload", { method: "POST", body: formData });
+          const data = await res.json();
+          status.textContent = `✓ Uploaded: ${data.title}`;
+          fileInput.value = "";
+          titleInput.value = "";
+          loadDocuments();
+        } catch (err) {
+          status.textContent = `✗ Error: ${err.message}`;
         }
       });
+
+      // === LLM Config ===
+      let availableModels = [];
+      let selectedModel = "";
+
+      async function loadLLMConfig() {
+        try {
+          const res = await fetch("/api/llm/config");
+          const data = await res.json();
+          document.getElementById("llm-status-text").textContent = data.enabled ? "✓ Enabled" : "✗ Disabled";
+          document.getElementById("translation-status-text").textContent = data.translation_enabled
+            ? "✓ Enabled"
+            : "✗ Disabled";
+          document.getElementById("llm-provider").value = data.provider;
+          document.getElementById("llm-base-url").value = data.base_url;
+          if (data.model_name) {
+            document.getElementById("llm-model-name").value = data.model_name;
+            document.getElementById("selected-model-group").style.display = "block";
+            document.getElementById("save-config-btn").style.display = "block";
+          }
+        } catch (err) {
+          console.error("Failed to load LLM config:", err);
+        }
+      }
+
+      document.getElementById("test-connection-btn").addEventListener("click", async () => {
+        const status = document.getElementById("llm-config-status");
+        const payload = {
+          provider: document.getElementById("llm-provider").value,
+          base_url: document.getElementById("llm-base-url").value,
+          api_key: document.getElementById("llm-api-key").value,
+        };
+
+        if (!payload.base_url || !payload.api_key) {
+          status.textContent = "✗ Please fill in Base URL and API Key";
+          return;
+        }
+
+        status.textContent = "Testing connection...";
+        try {
+          const res = await fetch("/api/llm/test-connection", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          const data = await res.json();
+          availableModels = data.models;
+
+          if (availableModels.length === 0) {
+            status.textContent = "✓ Connected, but no models found";
+            return;
+          }
+
+          status.textContent = `✓ Connected! Found ${availableModels.length} models`;
+
+          // Show model list
+          const modelList = document.getElementById("model-list");
+          const modelItems = document.getElementById("model-items");
+          modelItems.innerHTML = availableModels
+            .map((m) => `<div class="model-item" data-model="${m}">${m}</div>`)
+            .join("");
+          modelList.style.display = "block";
+
+          // Add click handlers
+          document.querySelectorAll(".model-item").forEach((item) => {
+            item.addEventListener("click", () => {
+              document.querySelectorAll(".model-item").forEach((i) => i.classList.remove("selected"));
+              item.classList.add("selected");
+              selectedModel = item.dataset.model;
+              document.getElementById("llm-model-name").value = selectedModel;
+              document.getElementById("selected-model-group").style.display = "block";
+              document.getElementById("save-config-btn").style.display = "block";
+            });
+          });
+        } catch (err) {
+          status.textContent = "✗ Connection failed: " + err.message;
+        }
+      });
+
+      document.getElementById("llm-config-form").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const status = document.getElementById("llm-config-status");
+
+        if (!selectedModel) {
+          status.textContent = "✗ Please select a model first";
+          return;
+        }
+
+        const payload = {
+          provider: document.getElementById("llm-provider").value,
+          base_url: document.getElementById("llm-base-url").value,
+          model_name: selectedModel,
+          api_key: document.getElementById("llm-api-key").value,
+        };
+
+        status.textContent = "Saving...";
+        try {
+          const res = await fetch("/api/llm/config", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          const data = await res.json();
+          status.textContent = "✓ " + data.message;
+          document.getElementById("llm-api-key").value = "";
+        } catch (err) {
+          status.textContent = "✗ Error: " + err.message;
+        }
+      });
+
+      // === Document Center ===
+      let allDocuments = [];
+
+      async function loadDocuments() {
+        try {
+          const res = await fetch("/api/documents");
+          allDocuments = await res.json();
+          renderDocuments();
+        } catch (err) {
+          document.getElementById("doc-table-body").innerHTML = `<tr><td colspan="5">Error loading documents</td></tr>`;
+        }
+      }
+
+      function renderDocuments() {
+        const tbody = document.getElementById("doc-table-body");
+        if (allDocuments.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="5">No documents found</td></tr>`;
+          return;
+        }
+
+        tbody.innerHTML = allDocuments
+          .map(
+            (doc) => `
+          <tr data-id="${doc.id}">
+            <td><input type="checkbox" class="doc-checkbox" value="${doc.id}" /></td>
+            <td><strong>${escapeHtml(doc.name)}</strong></td>
+            <td><span class="badge badge-${doc.source}">${doc.source === "uploaded" ? "Uploaded" : "Built-in"}</span></td>
+            <td><span class="lang-count">${doc.languages.length} languages</span></td>
+            <td>
+              ${
+                doc.deletable
+                  ? `<button class="btn-delete" data-id="${doc.id}">Delete</button>`
+                  : `<span class="text-muted">—</span>`
+              }
+            </td>
+          </tr>`
+          )
+          .join("");
+
+        document.querySelectorAll(".btn-delete").forEach((btn) => {
+          btn.addEventListener("click", () => deleteDocument(btn.dataset.id));
+        });
+      }
+
+      async function deleteDocument(productId) {
+        if (!confirm("Delete this document?")) return;
+
+        try {
+          await fetch(`/api/manual/${productId}`, { method: "DELETE" });
+          loadDocuments();
+        } catch (err) {
+          alert("Failed to delete: " + err.message);
+        }
+      }
+
+      // Global language selector
+      document.getElementById("toggle-all-langs").addEventListener("click", () => {
+        const checkboxes = document.querySelectorAll(".global-lang-selector input[type=checkbox]");
+        const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+        checkboxes.forEach((cb) => (cb.checked = !allChecked));
+      });
+
+      // Select all documents
+      document.getElementById("select-all-docs").addEventListener("change", (e) => {
+        document.querySelectorAll(".doc-checkbox").forEach((cb) => (cb.checked = e.target.checked));
+      });
+
+      // Batch download
+      document.getElementById("batch-download-btn").addEventListener("click", async () => {
+        const selectedIds = Array.from(document.querySelectorAll(".doc-checkbox:checked")).map((cb) => cb.value);
+        if (selectedIds.length === 0) {
+          alert("Please select at least one document.");
+          return;
+        }
+
+        const selectedLangs = Array.from(
+          document.querySelectorAll(".global-lang-selector input[type=checkbox]:checked")
+        ).map((cb) => cb.value);
+        if (selectedLangs.length === 0) {
+          alert("Please select at least one language.");
+          return;
+        }
+
+        const status = document.getElementById("batch-status");
+        status.textContent = `Generating ${selectedIds.length} PDFs...`;
+
+        for (const productId of selectedIds) {
+          try {
+            const res = await fetch(`/api/manual/${productId}/pdf`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ languages: selectedLangs }),
+            });
+            const data = await res.json();
+            const a = document.createElement("a");
+            a.href = data.download_url;
+            a.download = data.download_url.split("/").pop();
+            a.click();
+          } catch (err) {
+            console.error(`Failed for ${productId}:`, err);
+          }
+        }
+
+        status.textContent = `✓ Downloaded ${selectedIds.length} PDFs`;
+        setTimeout(() => (status.textContent = ""), 3000);
+      });
+
+      // Batch delete
+      document.getElementById("batch-delete-btn").addEventListener("click", async () => {
+        const selectedIds = Array.from(document.querySelectorAll(".doc-checkbox:checked")).map((cb) => cb.value);
+        if (selectedIds.length === 0) {
+          alert("Please select at least one document.");
+          return;
+        }
+
+        const deletableIds = selectedIds.filter((id) => {
+          const doc = allDocuments.find((d) => d.id === id);
+          return doc && doc.deletable;
+        });
+
+        if (deletableIds.length === 0) {
+          alert("None of the selected documents can be deleted.");
+          return;
+        }
+
+        if (!confirm(`Delete ${deletableIds.length} document(s)?`)) return;
+
+        const status = document.getElementById("batch-status");
+        status.textContent = `Deleting...`;
+
+        for (const productId of deletableIds) {
+          try {
+            await fetch(`/api/manual/${productId}`, { method: "DELETE" });
+          } catch (err) {
+            console.error(`Failed to delete ${productId}:`, err);
+          }
+        }
+
+        status.textContent = `✓ Deleted ${deletableIds.length} documents`;
+        setTimeout(() => (status.textContent = ""), 3000);
+        loadDocuments();
+      });
+
+      function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Initialize
+      loadLLMConfig();
+      loadDocuments();
     </script>
   </body>
 </html>

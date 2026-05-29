@@ -6,3 +6,4 @@ outputs/*.html
 volumes/
 .pytest_cache/
 .DS_Store
+.gstack/

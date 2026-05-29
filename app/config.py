@@ -32,6 +32,10 @@ MODEL_NAME = os.getenv("MANUAL_AGENT_MODEL_NAME", "")
 MODEL_API_KEY = os.getenv("MANUAL_AGENT_MODEL_API_KEY", os.getenv("OPENAI_API_KEY", ""))
 MODEL_TIMEOUT_SECONDS = float(os.getenv("MANUAL_AGENT_MODEL_TIMEOUT_SECONDS", "12"))
 
+UPLOAD_DIR = BASE_DIR / "uploads"
+UPLOADED_MANUALS_FILE = DATA_DIR / "uploaded_manuals.json"
+ALLOWED_UPLOAD_EXTENSIONS = {".pdf", ".txt"}
+
 FONT_CANDIDATES = [
     "/Library/Fonts/Arial Unicode.ttf",
     "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",

@@ -93,6 +93,11 @@ class LocalVectorStore:
         ]
         return sorted(scored, key=lambda item: item.score, reverse=True)[:limit]
 
+    def remove_product(self, product_id: str) -> int:
+        before = len(self.rows)
+        self.rows = [row for row in self.rows if row["product_id"] != product_id]
+        return before - len(self.rows)
+
 
 class MilvusVectorStore:
     def __init__(self) -> None:
@@ -179,6 +184,15 @@ class MilvusVectorStore:
             for hit in rows[0]
         ]
         return sorted(results, key=lambda item: item.score, reverse=True)[:limit]
+
+    def remove_product(self, product_id: str) -> int:
+        try:
+            self.collection.delete(f'product_id == "{product_id}"')
+            self.collection.flush()
+            self.collection.load()
+        except Exception:
+            return 0
+        return 1
 
 
 def get_vector_store() -> Union[LocalVectorStore, MilvusVectorStore]:

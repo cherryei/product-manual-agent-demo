@@ -5,4 +5,5 @@ pydantic==2.12.5
 pymilvus==2.6.5
 reportlab==4.4.6
 python-multipart==0.0.20
+pdfminer.six==20251107
 pytest==8.4.2
