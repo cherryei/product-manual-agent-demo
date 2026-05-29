@@ -37,7 +37,16 @@ UPLOADED_MANUALS_FILE = DATA_DIR / "uploaded_manuals.json"
 ALLOWED_UPLOAD_EXTENSIONS = {".pdf", ".txt"}
 
 FONT_CANDIDATES = [
+    # macOS
     "/Library/Fonts/Arial Unicode.ttf",
     "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
     "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc",
+    # Windows
+    "C:/Windows/Fonts/arial.ttf",
+    "C:/Windows/Fonts/msyh.ttc",  # Microsoft YaHei (支持中文)
+    "C:/Windows/Fonts/msgothic.ttc",  # MS Gothic (支持日文)
+    # Linux (Ubuntu/Debian)
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
 ]
