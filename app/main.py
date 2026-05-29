@@ -143,9 +143,19 @@ async def upload(file: UploadFile = File(...), title: str = Form(default="")):
 
 @app.get("/downloads/{filename}")
 def download(filename: str):
+    # 安全检查：防止路径遍历攻击
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+
     path = OUTPUT_DIR / filename
+
+    # 调试日志
+    import logging
+    logging.info(f"Download request: filename={filename}, path={path}, exists={path.exists()}")
+
     if not path.exists():
-        raise HTTPException(status_code=404, detail="File not found")
+        raise HTTPException(status_code=404, detail=f"File not found: {filename}")
+
     return FileResponse(
         path,
         media_type="application/pdf",

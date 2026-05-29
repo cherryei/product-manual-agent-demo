@@ -7,3 +7,10 @@ volumes/
 .pytest_cache/
 .DS_Store
 .gstack/
+.env
+uploads/*
+!uploads/.gitkeep
+data/uploaded_manuals.json
+data/local_vector_store.json
+*.log
+nohup.out

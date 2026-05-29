@@ -463,6 +463,8 @@
         let successCount = 0;
         for (const productId of selectedIds) {
           try {
+            status.textContent = `Generating PDF for ${productId}...`;
+
             const res = await fetch(`/api/manual/${productId}/pdf`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -470,10 +472,16 @@
             });
 
             if (!res.ok) {
-              throw new Error(`HTTP ${res.status}`);
+              const errorData = await res.json().catch(() => ({ detail: `HTTP ${res.status}` }));
+              throw new Error(errorData.detail || `HTTP ${res.status}`);
             }
 
             const data = await res.json();
+
+            // 验证响应数据
+            if (!data.download_url) {
+              throw new Error("Invalid response: missing download_url");
+            }
 
             // 使用隐藏的 iframe 触发下载（不会被浏览器阻止）
             const iframe = document.createElement("iframe");
@@ -482,7 +490,11 @@
             document.body.appendChild(iframe);
 
             // 5秒后移除 iframe
-            setTimeout(() => document.body.removeChild(iframe), 5000);
+            setTimeout(() => {
+              if (document.body.contains(iframe)) {
+                document.body.removeChild(iframe);
+              }
+            }, 5000);
 
             successCount++;
 
@@ -490,7 +502,9 @@
             await new Promise(resolve => setTimeout(resolve, 500));
           } catch (err) {
             console.error(`Failed for ${productId}:`, err);
-            status.textContent = `✗ Error downloading ${productId}: ${err.message}`;
+            status.textContent = `✗ Error: ${productId} - ${err.message}`;
+            // 等待用户看到错误信息
+            await new Promise(resolve => setTimeout(resolve, 2000));
           }
         }
 
