@@ -460,6 +460,7 @@
         const status = document.getElementById("batch-status");
         status.textContent = `Generating ${selectedIds.length} PDFs...`;
 
+        let successCount = 0;
         for (const productId of selectedIds) {
           try {
             const res = await fetch(`/api/manual/${productId}/pdf`, {
@@ -467,18 +468,36 @@
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ languages: selectedLangs }),
             });
+
+            if (!res.ok) {
+              throw new Error(`HTTP ${res.status}`);
+            }
+
             const data = await res.json();
-            const a = document.createElement("a");
-            a.href = data.download_url;
-            a.download = data.download_url.split("/").pop();
-            a.click();
+
+            // 使用隐藏的 iframe 触发下载（不会被浏览器阻止）
+            const iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = data.download_url;
+            document.body.appendChild(iframe);
+
+            // 5秒后移除 iframe
+            setTimeout(() => document.body.removeChild(iframe), 5000);
+
+            successCount++;
+
+            // 添加延迟避免同时下载太多文件
+            await new Promise(resolve => setTimeout(resolve, 500));
           } catch (err) {
             console.error(`Failed for ${productId}:`, err);
+            status.textContent = `✗ Error downloading ${productId}: ${err.message}`;
           }
         }
 
-        status.textContent = `✓ Downloaded ${selectedIds.length} PDFs`;
-        setTimeout(() => (status.textContent = ""), 3000);
+        if (successCount > 0) {
+          status.textContent = `✓ Downloaded ${successCount} PDF(s)`;
+          setTimeout(() => (status.textContent = ""), 3000);
+        }
       });
 
       // Batch delete

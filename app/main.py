@@ -146,7 +146,12 @@ def download(filename: str):
     path = OUTPUT_DIR / filename
     if not path.exists():
         raise HTTPException(status_code=404, detail="File not found")
-    return FileResponse(path, media_type="application/pdf", filename=filename)
+    return FileResponse(
+        path,
+        media_type="application/pdf",
+        filename=filename,
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
 
 
 @app.get("/api/llm/config", response_model=LLMConfigResponse)
